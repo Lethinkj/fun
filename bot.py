@@ -64,6 +64,7 @@ AI_MAX_TOKENS = int(os.getenv("AI_MAX_TOKENS", "220"))
 TTS_BACKEND = os.getenv("TTS_BACKEND", "piper").lower()
 TTS_VOICE = os.getenv("TTS_VOICE", "en-US-AriaNeural")
 MAX_TTS_CHARS = int(os.getenv("MAX_TTS_CHARS", "450"))
+ACK_TTS_TEXT = os.getenv("ACK_TTS_TEXT", "Okay.")
 LOCAL_TTS_MODEL_PATH = Path(os.getenv("LOCAL_TTS_MODEL_PATH", "voices/en_US-lessac-medium.onnx"))
 MIN_RMS_FOR_TRANSCRIPTION = int(os.getenv("MIN_RMS_FOR_TRANSCRIPTION", "140"))
 ASR_BACKEND = os.getenv("ASR_BACKEND", "auto").lower()
@@ -824,6 +825,8 @@ async def respond_to_text_prompt(message: discord.Message, prompt: str) -> None:
         await message.reply(response)
 
         try:
+            if ACK_TTS_TEXT.strip():
+                await speak_text(vc, session_state, ACK_TTS_TEXT)
             tts_started = time.monotonic()
             await speak_text(vc, session_state, response)
             log.info("Voice playback completed in %.2fs for user=%s", time.monotonic() - tts_started, message.author)
