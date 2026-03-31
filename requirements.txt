@@ -1,0 +1,7 @@
+discord.py[voice]>=2.7.0
+discord-ext-voice-recv>=0.5.2a179
+aiohttp>=3.13.0
+python-dotenv>=1.1.0
+edge-tts>=7.2.1
+faster-whisper>=1.2.1
+piper-tts>=1.4.1

@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: bot-voice
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python bot.py"
+    plan: free
+    envVars:
+      - key: HF_HOME
+        value: /app/cache/huggingface
+      - key: TRANSFORMERS_CACHE
+        value: /app/cache/transformers
+      - key: TORCH_HOME
+        value: /app/cache/torch
+    disk:
+      - name: cache
+        mountPath: /app/cache
+        sizeGB: 1
