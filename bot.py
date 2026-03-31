@@ -24,6 +24,7 @@ import discord
 from discord import opus as discord_opus
 from discord.ext import commands, voice_recv
 from dotenv import load_dotenv
+from aiohttp import web
 
 try:
     import edge_tts
@@ -70,6 +71,8 @@ LOCAL_ASR_MODEL = os.getenv("LOCAL_ASR_MODEL", "tiny.en")
 LOCAL_ASR_DEVICE = os.getenv("LOCAL_ASR_DEVICE", "cpu")
 LOCAL_ASR_COMPUTE_TYPE = os.getenv("LOCAL_ASR_COMPUTE_TYPE", "int8")
 LIVE_VOICE_ENABLED = os.getenv("LIVE_VOICE_ENABLED", "false").lower() in {"1", "true", "yes", "on"}
+WEB_HOST = os.getenv("WEB_HOST", "0.0.0.0")
+WEB_PORT = int(os.getenv("PORT", os.getenv("WEB_PORT", "10000")))
 
 PCM_BYTES_PER_SECOND = 48000 * 2 * 2
 MIN_CHUNK_BYTES = int(VOICE_CHUNK_SECONDS * PCM_BYTES_PER_SECOND)
@@ -233,6 +236,29 @@ patch_voice_recv_decoder()
 logging.getLogger("discord.ext.voice_recv.reader").setLevel(logging.WARNING)
 logging.getLogger("discord.ext.voice_recv.gateway").setLevel(logging.WARNING)
 logging.getLogger("discord.ext.voice_recv.opus").setLevel(logging.WARNING)
+
+
+async def health_handler(_request: web.Request) -> web.Response:
+    return web.json_response(
+        {
+            "status": "ok",
+            "bot_ready": bot.is_ready(),
+            "bot_user": str(bot.user) if bot.user else None,
+        }
+    )
+
+
+async def start_healthcheck_server() -> web.AppRunner:
+    app = web.Application()
+    app.router.add_get("/", health_handler)
+    app.router.add_get("/health", health_handler)
+
+    runner = web.AppRunner(app)
+    await runner.setup()
+    site = web.TCPSite(runner, host=WEB_HOST, port=WEB_PORT)
+    await site.start()
+    log.info("Healthcheck server listening on %s:%s", WEB_HOST, WEB_PORT)
+    return runner
 
 
 @bot.event
@@ -1022,8 +1048,17 @@ async def leave(ctx: commands.Context) -> None:
     await ctx.send("Disconnected.")
 
 
-if __name__ == "__main__":
+async def main() -> None:
     token = os.getenv("DISCORD_BOT_TOKEN", "")
     if not token:
         raise RuntimeError("Set DISCORD_BOT_TOKEN in .env")
-    bot.run(token)
+
+    runner = await start_healthcheck_server()
+    try:
+        await bot.start(token)
+    finally:
+        await runner.cleanup()
+
+
+if __name__ == "__main__":
+    asyncio.run(main())
