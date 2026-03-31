@@ -1,0 +1,859 @@
+2026-03-31 19:54:49,742 INFO discord.client logging in using static token
+2026-03-31 19:54:51,686 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 1e06a13e6c116b6b99b97183b9d67232).
+2026-03-31 19:54:53,506 INFO discord.voice_state Connecting to voice...
+2026-03-31 19:54:53,507 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-03-31 19:54:54,125 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom12-ea6b2655.discord.media:2053
+2026-03-31 19:54:54,471 INFO discord.voice_state Voice connection complete.
+2026-03-31 19:55:32,905 INFO discord.player ffmpeg process 49040 successfully terminated with return code of 0.
+2026-03-31 19:56:57,430 INFO discord.player ffmpeg process 49655 successfully terminated with return code of 0.
+2026-03-31 19:59:28,994 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1470860948993605632 (Guild ID 1350324319942868992)
+2026-03-31 19:59:52,753 INFO discord.client logging in using static token
+2026-03-31 19:59:54,962 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: cdfab37b704ab868eb1f9b2b17656bfa).
+2026-03-31 19:59:59,000 INFO discord.voice_state Connecting to voice...
+2026-03-31 19:59:59,000 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-03-31 19:59:59,593 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom12-ea6b2655.discord.media:2053
+2026-03-31 20:00:00,014 INFO discord.voice_state Voice connection complete.
+2026-03-31 20:03:21,366 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1470860948993605632 (Guild ID 1350324319942868992)
+2026-03-31 20:05:41,459 INFO bot Loading local TTS model from voices/en_US-lessac-medium.onnx
+2026-03-31 20:06:09,671 INFO bot Loading local TTS model from voices/en_US-lessac-medium.onnx
+2026-03-31 20:08:00,647 INFO discord.client logging in using static token
+2026-03-31 20:08:02,664 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 2ee8a05141db473b03c766dbe01ea872).
+2026-03-31 20:08:11,693 INFO discord.voice_state Connecting to voice...
+2026-03-31 20:08:11,693 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-03-31 20:08:12,911 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom12-ea6b2655.discord.media:2053
+2026-03-31 20:08:13,322 INFO discord.voice_state Voice connection complete.
+2026-03-31 20:10:31,469 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1470860948993605632 (Guild ID 1350324319942868992)
+2026-03-31 20:10:34,891 INFO discord.client logging in using static token
+2026-03-31 20:10:37,379 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 34f6b1555e476a748a4b91f516262850).
+2026-03-31 20:10:39,644 INFO discord.voice_state Connecting to voice...
+2026-03-31 20:10:39,644 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-03-31 20:10:40,238 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom12-ea6b2655.discord.media:2053
+2026-03-31 20:10:40,546 INFO discord.voice_state Voice connection complete.
+2026-03-31 20:12:16,704 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1470860948993605632 (Guild ID 1350324319942868992)
+2026-03-31 20:14:31,570 INFO discord.client logging in using static token
+2026-03-31 20:14:33,723 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: b7c16150f9e63501462b7b0c20b14dcb).
+2026-03-31 20:14:35,740 INFO __main__ Bot ready as BeeLert#5309 (id=1438185938843996270)
+2026-03-31 20:14:38,262 INFO discord.voice_state Connecting to voice...
+2026-03-31 20:14:38,262 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-03-31 20:14:38,896 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom12-ea6b2655.discord.media:2053
+2026-03-31 20:14:39,305 INFO discord.voice_state Voice connection complete.
+2026-03-31 20:14:39,310 INFO __main__ Join command guild=1350324319942868992 author=lethinkj channel=🕹️Chill zone live_voice=False
+2026-03-31 20:14:48,918 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@1438185938843996270> hii' mentions=[1438185938843996270]
+2026-03-31 20:14:48,918 INFO __main__ Mention detected from user=lethinkj raw='<@1438185938843996270> hii' cleaned='hii' mentions=[1438185938843996270]
+2026-03-31 20:14:48,919 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: hii
+2026-03-31 20:14:48,919 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:14:48,919 ERROR __main__ AI request failed for mention prompt
+Traceback (most recent call last):
+  File "/home/lethin/projects/backup/bot-voice/bot.py", line 773, in respond_to_text_prompt
+    response = await generate_ai_reply(prompt, message.guild, message.author)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/bot.py", line 457, in generate_ai_reply
+    raise RuntimeError("Set AI_API_KEY and AI_MODEL in .env to enable AI replies.")
+RuntimeError: Set AI_API_KEY and AI_MODEL in .env to enable AI replies.
+2026-03-31 20:17:11,301 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1470860948993605632 (Guild ID 1350324319942868992)
+2026-03-31 20:17:14,418 INFO discord.client logging in using static token
+2026-03-31 20:17:16,528 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 0b7f5587134c1eaf3f44f4cb8d5f7bcf).
+2026-03-31 20:17:18,535 INFO __main__ Bot ready as BeeLert#5309 (id=1438185938843996270)
+2026-03-31 20:17:18,536 INFO __main__ AI configured=True model=google/gemini-2.5-flash tts_backend=piper
+2026-03-31 20:17:19,119 INFO discord.voice_state Connecting to voice...
+2026-03-31 20:17:19,119 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-03-31 20:17:19,717 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom12-ea6b2655.discord.media:2053
+2026-03-31 20:17:20,135 INFO discord.voice_state Voice connection complete.
+2026-03-31 20:17:20,140 INFO __main__ Join command guild=1350324319942868992 author=lethinkj channel=🕹️Chill zone live_voice=False
+2026-03-31 20:17:27,617 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@1438185938843996270> hii' mentions=[1438185938843996270]
+2026-03-31 20:17:27,617 INFO __main__ Mention detected from user=lethinkj raw='<@1438185938843996270> hii' cleaned='hii' mentions=[1438185938843996270]
+2026-03-31 20:17:27,617 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: hii
+2026-03-31 20:17:27,617 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:17:29,911 INFO __main__ AI response ready in 2.29s for user=lethinkj
+2026-03-31 20:17:30,740 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=32 backend=piper
+2026-03-31 20:17:30,741 INFO __main__ Loading local TTS model from voices/en_US-lessac-low.onnx
+2026-03-31 20:17:32,010 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774968450741.wav
+2026-03-31 20:17:34,333 INFO discord.player ffmpeg process 59782 successfully terminated with return code of 0.
+2026-03-31 20:17:34,333 INFO __main__ Voice playback completed in 3.59s for user=lethinkj
+2026-03-31 20:17:46,661 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@1438185938843996270> what is recursion' mentions=[1438185938843996270]
+2026-03-31 20:17:46,661 INFO __main__ Mention detected from user=lethinkj raw='<@1438185938843996270> what is recursion' cleaned='what is recursion' mentions=[1438185938843996270]
+2026-03-31 20:17:46,661 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: what is recursion
+2026-03-31 20:17:46,661 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:17:50,698 INFO __main__ AI response ready in 4.04s for user=lethinkj
+2026-03-31 20:17:51,384 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=163 backend=piper
+2026-03-31 20:17:51,717 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774968471384.wav
+2026-03-31 20:18:00,618 INFO discord.player ffmpeg process 59985 successfully terminated with return code of 0.
+2026-03-31 20:18:00,618 INFO __main__ Voice playback completed in 9.23s for user=lethinkj
+2026-03-31 20:18:13,403 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@1438185938843996270> what is function say in tamil' mentions=[1438185938843996270]
+2026-03-31 20:18:13,403 INFO __main__ Mention detected from user=lethinkj raw='<@1438185938843996270> what is function say in tamil' cleaned='what is function say in tamil' mentions=[1438185938843996270]
+2026-03-31 20:18:13,403 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: what is function say in tamil
+2026-03-31 20:18:13,403 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:18:15,327 INFO __main__ AI response ready in 1.92s for user=lethinkj
+2026-03-31 20:18:16,306 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=55 backend=piper
+2026-03-31 20:18:16,431 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774968496306.wav
+2026-03-31 20:18:19,573 INFO discord.player ffmpeg process 60166 successfully terminated with return code of 0.
+2026-03-31 20:18:19,573 INFO __main__ Voice playback completed in 3.27s for user=lethinkj
+2026-03-31 20:21:42,471 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@1438185938843996270> heyy' mentions=[1438185938843996270]
+2026-03-31 20:21:42,471 INFO __main__ Mention detected from user=lethinkj raw='<@1438185938843996270> heyy' cleaned='heyy' mentions=[1438185938843996270]
+2026-03-31 20:21:42,471 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: heyy
+2026-03-31 20:21:42,471 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:21:44,837 INFO __main__ AI response ready in 2.37s for user=lethinkj
+2026-03-31 20:21:45,443 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=36 backend=piper
+2026-03-31 20:21:45,538 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774968705443.wav
+2026-03-31 20:21:48,020 INFO discord.player ffmpeg process 61799 successfully terminated with return code of 0.
+2026-03-31 20:21:48,020 INFO __main__ Voice playback completed in 2.58s for user=lethinkj
+2026-03-31 20:23:12,522 ERROR discord.ext.commands.bot Ignoring exception in command leave
+Traceback (most recent call last):
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/ext/commands/core.py", line 266, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/bot.py", line 996, in leave
+    session_state.live_task.cancel()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'cancel'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/ext/commands/bot.py", line 1376, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/ext/commands/core.py", line 1064, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/ext/commands/core.py", line 275, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: AttributeError: 'NoneType' object has no attribute 'cancel'
+2026-03-31 20:23:27,892 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1470860948993605632 (Guild ID 1350324319942868992)
+2026-03-31 20:24:06,574 INFO discord.client logging in using static token
+2026-03-31 20:24:11,801 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 75e71a43292d69631558641f2caef4bc).
+2026-03-31 20:24:13,808 INFO __main__ Bot ready as BeeLert#5309 (id=1438185938843996270)
+2026-03-31 20:24:13,808 INFO __main__ AI configured=True model=google/gemini-2.5-flash tts_backend=piper
+2026-03-31 20:24:15,287 ERROR discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "saavu" is not found
+2026-03-31 20:24:20,528 INFO discord.voice_state Connecting to voice...
+2026-03-31 20:24:20,529 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-03-31 20:24:21,216 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom12-ea6b2655.discord.media:2053
+2026-03-31 20:24:21,632 INFO discord.voice_state Voice connection complete.
+2026-03-31 20:24:21,634 INFO __main__ Join command guild=1350324319942868992 author=shaniya2710 channel=🕹️Chill zone live_voice=False
+2026-03-31 20:24:30,325 ERROR discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "saavu" is not found
+2026-03-31 20:24:45,713 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='<@1438185938843996270>  saavu ...saavu lei chetha payale saavu' mentions=[1438185938843996270]
+2026-03-31 20:24:45,713 INFO __main__ Mention detected from user=shaniya2710 raw='<@1438185938843996270>  saavu ...saavu lei chetha payale saavu' cleaned='saavu ...saavu lei chetha payale saavu' mentions=[1438185938843996270]
+2026-03-31 20:24:45,713 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: saavu ...saavu lei chetha payale saavu
+2026-03-31 20:24:45,714 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:24:49,796 INFO __main__ AI response ready in 4.08s for user=shaniya2710
+2026-03-31 20:24:50,703 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=25 backend=piper
+2026-03-31 20:24:50,703 INFO __main__ Loading local TTS model from voices/en_US-lessac-low.onnx
+2026-03-31 20:24:52,199 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774968890703.wav
+2026-03-31 20:24:54,063 INFO discord.player ffmpeg process 63378 successfully terminated with return code of 0.
+2026-03-31 20:24:54,063 INFO __main__ Voice playback completed in 3.36s for user=shaniya2710
+2026-03-31 20:25:06,175 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='So r u gng to diee' mentions=[1438185938843996270]
+2026-03-31 20:25:06,175 INFO __main__ Mention detected from user=shaniya2710 raw='So r u gng to diee' cleaned='So r u gng to diee' mentions=[1438185938843996270]
+2026-03-31 20:25:06,175 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: So r u gng to diee
+2026-03-31 20:25:06,175 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:25:07,421 INFO __main__ AI response ready in 1.25s for user=shaniya2710
+2026-03-31 20:25:08,420 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=99 backend=piper
+2026-03-31 20:25:08,655 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774968908421.wav
+2026-03-31 20:25:14,757 INFO discord.player ffmpeg process 63519 successfully terminated with return code of 0.
+2026-03-31 20:25:14,759 INFO __main__ Voice playback completed in 6.34s for user=shaniya2710
+2026-03-31 20:25:47,225 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='What if yiur code dies or api dies...you will die right' mentions=[1438185938843996270]
+2026-03-31 20:25:47,225 INFO __main__ Mention detected from user=shaniya2710 raw='What if yiur code dies or api dies...you will die right' cleaned='What if yiur code dies or api dies...you will die right' mentions=[1438185938843996270]
+2026-03-31 20:25:47,225 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: What if yiur code dies or api dies...you will die right
+2026-03-31 20:25:47,225 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:25:49,433 INFO __main__ AI response ready in 2.21s for user=shaniya2710
+2026-03-31 20:25:49,969 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=119 backend=piper
+2026-03-31 20:25:50,222 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774968949970.wav
+2026-03-31 20:25:57,444 INFO discord.player ffmpeg process 63839 successfully terminated with return code of 0.
+2026-03-31 20:25:57,444 INFO __main__ Voice playback completed in 7.47s for user=shaniya2710
+2026-03-31 20:26:01,808 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Podi' mentions=[1438185938843996270]
+2026-03-31 20:26:01,808 INFO __main__ Mention detected from user=shaniya2710 raw='Podi' cleaned='Podi' mentions=[1438185938843996270]
+2026-03-31 20:26:01,808 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Podi
+2026-03-31 20:26:01,808 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:26:02,980 INFO __main__ AI response ready in 1.17s for user=shaniya2710
+2026-03-31 20:26:03,549 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=78 backend=piper
+2026-03-31 20:26:03,720 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774968963549.wav
+2026-03-31 20:26:07,961 INFO discord.player ffmpeg process 63985 successfully terminated with return code of 0.
+2026-03-31 20:26:07,961 INFO __main__ Voice playback completed in 4.41s for user=shaniya2710
+2026-03-31 20:26:14,312 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='P o d i' mentions=[1438185938843996270]
+2026-03-31 20:26:14,312 INFO __main__ Mention detected from user=shaniya2710 raw='P o d i' cleaned='P o d i' mentions=[1438185938843996270]
+2026-03-31 20:26:14,312 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: P o d i
+2026-03-31 20:26:14,313 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:26:15,219 INFO __main__ AI response ready in 0.91s for user=shaniya2710
+2026-03-31 20:26:15,704 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=25 backend=piper
+2026-03-31 20:26:15,947 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774968975704.wav
+2026-03-31 20:26:19,968 INFO discord.player ffmpeg process 64100 successfully terminated with return code of 0.
+2026-03-31 20:26:19,968 INFO __main__ Voice playback completed in 4.26s for user=shaniya2710
+2026-03-31 20:26:22,226 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Oh shit' mentions=[1438185938843996270]
+2026-03-31 20:26:22,226 INFO __main__ Mention detected from user=shaniya2710 raw='Oh shit' cleaned='Oh shit' mentions=[1438185938843996270]
+2026-03-31 20:26:22,226 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Oh shit
+2026-03-31 20:26:22,226 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:26:25,251 INFO __main__ AI response ready in 3.02s for user=shaniya2710
+2026-03-31 20:26:26,100 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=63 backend=piper
+2026-03-31 20:26:26,253 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774968986100.wav
+2026-03-31 20:26:30,194 INFO discord.player ffmpeg process 64200 successfully terminated with return code of 0.
+2026-03-31 20:26:30,194 INFO __main__ Voice playback completed in 4.09s for user=shaniya2710
+2026-03-31 20:27:25,217 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Then what that context "bot dead or my code dead" ....' mentions=[1438185938843996270]
+2026-03-31 20:27:25,217 INFO __main__ Mention detected from user=shaniya2710 raw='Then what that context "bot dead or my code dead" ....' cleaned='Then what that context "bot dead or my code dead" ....' mentions=[1438185938843996270]
+2026-03-31 20:27:25,217 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Then what that context "bot dead or my code dead" ....
+2026-03-31 20:27:25,217 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:27:26,603 INFO __main__ AI response ready in 1.39s for user=shaniya2710
+2026-03-31 20:27:27,124 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=217 backend=piper
+2026-03-31 20:27:27,515 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969047124.wav
+2026-03-31 20:27:38,075 INFO discord.player ffmpeg process 64672 successfully terminated with return code of 0.
+2026-03-31 20:27:38,076 INFO __main__ Voice playback completed in 10.95s for user=shaniya2710
+2026-03-31 20:28:09,403 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='So however you will finally die right...when that like happen' mentions=[1438185938843996270]
+2026-03-31 20:28:09,403 INFO __main__ Mention detected from user=shaniya2710 raw='So however you will finally die right...when that like happen' cleaned='So however you will finally die right...when that like happen' mentions=[1438185938843996270]
+2026-03-31 20:28:09,403 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: So however you will finally die right...when that like happen
+2026-03-31 20:28:09,403 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:28:10,901 INFO __main__ AI response ready in 1.50s for user=shaniya2710
+2026-03-31 20:28:11,452 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=96 backend=piper
+2026-03-31 20:28:11,616 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969091452.wav
+2026-03-31 20:28:16,617 INFO discord.player ffmpeg process 64997 successfully terminated with return code of 0.
+2026-03-31 20:28:16,617 INFO __main__ Voice playback completed in 5.16s for user=shaniya2710
+2026-03-31 20:28:26,739 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Podi mental u r a stupid' mentions=[1438185938843996270]
+2026-03-31 20:28:26,739 INFO __main__ Mention detected from user=shaniya2710 raw='Podi mental u r a stupid' cleaned='Podi mental u r a stupid' mentions=[1438185938843996270]
+2026-03-31 20:28:26,739 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Podi mental u r a stupid
+2026-03-31 20:28:26,739 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:28:28,927 INFO __main__ AI response ready in 2.19s for user=shaniya2710
+2026-03-31 20:28:29,701 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=106 backend=piper
+2026-03-31 20:28:29,895 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969109702.wav
+2026-03-31 20:28:36,176 INFO discord.player ffmpeg process 65150 successfully terminated with return code of 0.
+2026-03-31 20:28:36,176 INFO __main__ Voice playback completed in 6.47s for user=shaniya2710
+2026-03-31 20:29:14,775 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='You are a stupid.....i rephrased it...now can yiu hnderstand....u small little bot ...can not even understand human texting language' mentions=[1438185938843996270]
+2026-03-31 20:29:14,776 INFO __main__ Mention detected from user=shaniya2710 raw='You are a stupid.....i rephrased it...now can yiu hnderstand....u small little bot ...can not even understand human texting language' cleaned='You are a stupid.....i rephrased it...now can yiu hnderstand....u small little bot ...can not even understand human texting language' mentions=[1438185938843996270]
+2026-03-31 20:29:14,776 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: You are a stupid.....i rephrased it...now can yiu hnderstand....u small little bot ...can not even understand human texting language
+2026-03-31 20:29:14,776 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:29:16,699 INFO __main__ AI response ready in 1.92s for user=shaniya2710
+2026-03-31 20:29:17,483 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=162 backend=piper
+2026-03-31 20:29:17,826 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969157483.wav
+2026-03-31 20:29:26,967 INFO discord.player ffmpeg process 65551 successfully terminated with return code of 0.
+2026-03-31 20:29:26,967 INFO __main__ Voice playback completed in 9.48s for user=shaniya2710
+2026-03-31 20:30:08,419 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='First improve the pronunciation of my name shaniya....its not shaniya....it pronounced as sh..aa..n..i.y.a understand' mentions=[1438185938843996270]
+2026-03-31 20:30:08,419 INFO __main__ Mention detected from user=shaniya2710 raw='First improve the pronunciation of my name shaniya....its not shaniya....it pronounced as sh..aa..n..i.y.a understand' cleaned='First improve the pronunciation of my name shaniya....its not shaniya....it pronounced as sh..aa..n..i.y.a understand' mentions=[1438185938843996270]
+2026-03-31 20:30:08,419 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: First improve the pronunciation of my name shaniya....its not shaniya....it pronounced as sh..aa..n..i.y.a understand
+2026-03-31 20:30:08,419 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:30:09,662 INFO __main__ AI response ready in 1.24s for user=shaniya2710
+2026-03-31 20:30:10,586 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=112 backend=piper
+2026-03-31 20:30:10,868 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969210587.wav
+2026-03-31 20:30:17,529 INFO discord.player ffmpeg process 66021 successfully terminated with return code of 0.
+2026-03-31 20:30:17,529 INFO __main__ Voice playback completed in 6.94s for user=shaniya2710
+2026-03-31 20:30:30,434 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='No no...its totally wring old one was fine' mentions=[1438185938843996270]
+2026-03-31 20:30:30,434 INFO __main__ Mention detected from user=shaniya2710 raw='No no...its totally wring old one was fine' cleaned='No no...its totally wring old one was fine' mentions=[1438185938843996270]
+2026-03-31 20:30:30,434 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: No no...its totally wring old one was fine
+2026-03-31 20:30:30,434 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:30:33,948 INFO __main__ AI response ready in 3.51s for user=shaniya2710
+2026-03-31 20:30:34,841 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=87 backend=piper
+2026-03-31 20:30:35,039 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969234841.wav
+2026-03-31 20:30:40,180 INFO discord.player ffmpeg process 66232 successfully terminated with return code of 0.
+2026-03-31 20:30:40,180 INFO __main__ Voice playback completed in 5.34s for user=shaniya2710
+2026-03-31 20:30:51,016 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Say it again' mentions=[1438185938843996270]
+2026-03-31 20:30:51,016 INFO __main__ Mention detected from user=shaniya2710 raw='Say it again' cleaned='Say it again' mentions=[1438185938843996270]
+2026-03-31 20:30:51,016 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Say it again
+2026-03-31 20:30:51,016 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:30:53,716 INFO __main__ AI response ready in 2.70s for user=shaniya2710
+2026-03-31 20:30:54,539 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=112 backend=piper
+2026-03-31 20:30:54,737 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969254539.wav
+2026-03-31 20:31:00,518 INFO discord.player ffmpeg process 66381 successfully terminated with return code of 0.
+2026-03-31 20:31:00,519 INFO __main__ Voice playback completed in 5.98s for user=shaniya2710
+2026-03-31 20:31:15,354 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='You brainlesss...beelert go cry in the corner' mentions=[1438185938843996270]
+2026-03-31 20:31:15,354 INFO __main__ Mention detected from user=shaniya2710 raw='You brainlesss...beelert go cry in the corner' cleaned='You brainlesss... go cry in the corner' mentions=[1438185938843996270]
+2026-03-31 20:31:15,354 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: You brainlesss... go cry in the corner
+2026-03-31 20:31:15,354 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:31:17,312 INFO __main__ AI response ready in 1.96s for user=shaniya2710
+2026-03-31 20:31:18,151 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=64 backend=piper
+2026-03-31 20:31:18,348 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969278151.wav
+2026-03-31 20:31:22,149 INFO discord.player ffmpeg process 66590 successfully terminated with return code of 0.
+2026-03-31 20:31:22,149 INFO __main__ Voice playback completed in 4.00s for user=shaniya2710
+2026-03-31 20:31:39,821 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='You are making everything not okay' mentions=[1438185938843996270]
+2026-03-31 20:31:39,821 INFO __main__ Mention detected from user=shaniya2710 raw='You are making everything not okay' cleaned='You are making everything not okay' mentions=[1438185938843996270]
+2026-03-31 20:31:39,821 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: You are making everything not okay
+2026-03-31 20:31:39,821 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:31:41,824 INFO __main__ AI response ready in 2.00s for user=shaniya2710
+2026-03-31 20:31:42,466 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=35 backend=piper
+2026-03-31 20:31:42,540 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969302467.wav
+2026-03-31 20:31:44,561 INFO discord.player ffmpeg process 66778 successfully terminated with return code of 0.
+2026-03-31 20:31:44,561 INFO __main__ Voice playback completed in 2.10s for user=shaniya2710
+2026-03-31 20:32:01,624 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='who are you' mentions=[1438185938843996270]
+2026-03-31 20:32:01,624 INFO __main__ Mention detected from user=lethinkj raw='who are you' cleaned='who are you' mentions=[1438185938843996270]
+2026-03-31 20:32:01,624 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: who are you
+2026-03-31 20:32:01,624 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:32:03,640 INFO __main__ AI response ready in 2.02s for user=lethinkj
+2026-03-31 20:32:04,261 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=62 backend=piper
+2026-03-31 20:32:04,437 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969324261.wav
+2026-03-31 20:32:08,458 INFO __main__ Voice playback completed in 4.20s for user=lethinkj
+2026-03-31 20:32:08,458 INFO discord.player ffmpeg process 66989 successfully terminated with return code of 0.
+2026-03-31 20:32:12,815 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Saavu' mentions=[1438185938843996270]
+2026-03-31 20:32:12,815 INFO __main__ Mention detected from user=shaniya2710 raw='Saavu' cleaned='Saavu' mentions=[1438185938843996270]
+2026-03-31 20:32:12,815 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Saavu
+2026-03-31 20:32:12,815 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:32:14,737 INFO __main__ AI response ready in 1.92s for user=shaniya2710
+2026-03-31 20:32:15,505 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=77 backend=piper
+2026-03-31 20:32:15,627 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969335505.wav
+2026-03-31 20:32:19,528 INFO discord.player ffmpeg process 67089 successfully terminated with return code of 0.
+2026-03-31 20:32:19,528 INFO __main__ Voice playback completed in 4.02s for user=shaniya2710
+2026-03-31 20:32:34,519 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Mudiyathu podi' mentions=[1438185938843996270]
+2026-03-31 20:32:34,519 INFO __main__ Mention detected from user=shaniya2710 raw='Mudiyathu podi' cleaned='Mudiyathu podi' mentions=[1438185938843996270]
+2026-03-31 20:32:34,519 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Mudiyathu podi
+2026-03-31 20:32:34,519 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:32:37,228 INFO __main__ AI response ready in 2.71s for user=shaniya2710
+2026-03-31 20:32:37,918 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=102 backend=piper
+2026-03-31 20:32:38,149 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969357918.wav
+2026-03-31 20:32:44,730 INFO discord.player ffmpeg process 67300 successfully terminated with return code of 0.
+2026-03-31 20:32:44,731 INFO __main__ Voice playback completed in 6.81s for user=shaniya2710
+2026-03-31 20:33:01,214 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Thats wht am trying to say youu' mentions=[1438185938843996270]
+2026-03-31 20:33:01,214 INFO __main__ Mention detected from user=shaniya2710 raw='Thats wht am trying to say youu' cleaned='Thats wht am trying to say youu' mentions=[1438185938843996270]
+2026-03-31 20:33:01,214 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Thats wht am trying to say youu
+2026-03-31 20:33:01,214 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:33:02,691 INFO __main__ AI response ready in 1.48s for user=shaniya2710
+2026-03-31 20:33:03,538 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=47 backend=piper
+2026-03-31 20:33:03,695 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969383538.wav
+2026-03-31 20:33:06,677 INFO discord.player ffmpeg process 67515 successfully terminated with return code of 0.
+2026-03-31 20:33:06,677 INFO __main__ Voice playback completed in 3.14s for user=shaniya2710
+2026-03-31 20:33:17,964 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Okay...now say what did you understand' mentions=[1438185938843996270]
+2026-03-31 20:33:17,964 INFO __main__ Mention detected from user=shaniya2710 raw='Okay...now say what did you understand' cleaned='Okay...now say what did you understand' mentions=[1438185938843996270]
+2026-03-31 20:33:17,964 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Okay...now say what did you understand
+2026-03-31 20:33:17,964 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:33:19,604 INFO __main__ AI response ready in 1.64s for user=shaniya2710
+2026-03-31 20:33:20,422 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=74 backend=piper
+2026-03-31 20:33:20,562 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969400422.wav
+2026-03-31 20:33:24,884 INFO discord.player ffmpeg process 67684 successfully terminated with return code of 0.
+2026-03-31 20:33:24,884 INFO __main__ Voice playback completed in 4.46s for user=shaniya2710
+2026-03-31 20:34:18,111 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1470860948993605632 (Guild ID 1350324319942868992)
+2026-03-31 20:38:45,192 INFO discord.client logging in using static token
+2026-03-31 20:38:47,700 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 0704fb5bbb301c082d6a65ea48c9cae2).
+2026-03-31 20:38:49,718 INFO __main__ Bot ready as BeeLert#5309 (id=1438185938843996270)
+2026-03-31 20:38:49,718 INFO __main__ AI configured=True model=google/gemini-2.5-flash tts_backend=piper
+2026-03-31 20:38:51,198 INFO discord.voice_state Connecting to voice...
+2026-03-31 20:38:51,198 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-03-31 20:38:51,820 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom12-ea6b2655.discord.media:2053
+2026-03-31 20:38:52,233 INFO discord.voice_state Voice connection complete.
+2026-03-31 20:38:52,234 INFO __main__ Join command guild=1350324319942868992 author=lethinkj channel=🕹️Chill zone live_voice=False
+2026-03-31 20:39:03,894 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@1438185938843996270> welcome anitus' mentions=[1438185938843996270]
+2026-03-31 20:39:03,894 INFO __main__ Mention detected from user=lethinkj raw='<@1438185938843996270> welcome anitus' cleaned='welcome anitus' mentions=[1438185938843996270]
+2026-03-31 20:39:03,894 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: welcome anitus
+2026-03-31 20:39:03,894 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:39:05,820 INFO __main__ AI response ready in 1.93s for user=lethinkj
+2026-03-31 20:39:06,525 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=43 backend=piper
+2026-03-31 20:39:06,525 INFO __main__ Loading local TTS model from voices/en_US-lessac-low.onnx
+2026-03-31 20:39:08,064 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969746525.wav
+2026-03-31 20:39:11,108 INFO discord.player ffmpeg process 71979 successfully terminated with return code of 0.
+2026-03-31 20:39:11,108 INFO __main__ Voice playback completed in 4.58s for user=lethinkj
+2026-03-31 20:41:01,745 ERROR discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "startlistening" is not found
+2026-03-31 20:41:11,676 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@1438185938843996270>' mentions=[1438185938843996270]
+2026-03-31 20:41:11,676 INFO __main__ Mention detected from user=lethinkj raw='<@1438185938843996270>' cleaned='' mentions=[1438185938843996270]
+2026-03-31 20:41:23,688 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='hi' mentions=[1438185938843996270]
+2026-03-31 20:41:23,688 INFO __main__ Mention detected from user=lethinkj raw='hi' cleaned='hi' mentions=[1438185938843996270]
+2026-03-31 20:41:23,688 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: hi
+2026-03-31 20:41:23,688 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:41:26,111 INFO __main__ AI response ready in 2.42s for user=lethinkj
+2026-03-31 20:41:26,648 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Apdiya u know tamil ??' mentions=[1438185938843996270]
+2026-03-31 20:41:26,648 INFO __main__ Mention detected from user=shaniya2710 raw='Apdiya u know tamil ??' cleaned='Apdiya u know tamil ??' mentions=[1438185938843996270]
+2026-03-31 20:41:26,649 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Apdiya u know tamil ??
+2026-03-31 20:41:26,649 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:41:26,656 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=35 backend=piper
+2026-03-31 20:41:26,746 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969886656.wav
+2026-03-31 20:41:29,167 INFO discord.player ffmpeg process 72978 successfully terminated with return code of 0.
+2026-03-31 20:41:29,167 INFO __main__ Voice playback completed in 2.51s for user=lethinkj
+2026-03-31 20:41:30,690 INFO __main__ AI response ready in 1.52s for user=shaniya2710
+2026-03-31 20:41:31,305 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=58 backend=piper
+2026-03-31 20:41:31,416 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969891305.wav
+2026-03-31 20:41:34,637 INFO discord.player ffmpeg process 73035 successfully terminated with return code of 0.
+2026-03-31 20:41:34,637 INFO __main__ Voice playback completed in 3.33s for user=shaniya2710
+2026-03-31 20:41:47,966 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='say a thirukural in tamil' mentions=[1438185938843996270]
+2026-03-31 20:41:47,966 INFO __main__ Mention detected from user=lethinkj raw='say a thirukural in tamil' cleaned='say a thirukural in tamil' mentions=[1438185938843996270]
+2026-03-31 20:41:47,966 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: say a thirukural in tamil
+2026-03-31 20:41:47,966 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:41:49,834 INFO __main__ AI response ready in 1.87s for user=lethinkj
+2026-03-31 20:41:50,402 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=185 backend=piper
+2026-03-31 20:41:50,814 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969910402.wav
+2026-03-31 20:42:02,075 INFO discord.player ffmpeg process 73195 successfully terminated with return code of 0.
+2026-03-31 20:42:02,075 INFO __main__ Voice playback completed in 11.67s for user=lethinkj
+2026-03-31 20:42:28,483 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='U will be the one who wins prize at thirukural competition' mentions=[1438185938843996270]
+2026-03-31 20:42:28,483 INFO __main__ Mention detected from user=shaniya2710 raw='U will be the one who wins prize at thirukural competition' cleaned='U will be the one who wins prize at thirukural competition' mentions=[1438185938843996270]
+2026-03-31 20:42:28,483 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: U will be the one who wins prize at thirukural competition
+2026-03-31 20:42:28,483 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:42:29,563 INFO __main__ AI response ready in 1.08s for user=shaniya2710
+2026-03-31 20:42:30,597 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=70 backend=piper
+2026-03-31 20:42:30,725 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969950597.wav
+2026-03-31 20:42:34,346 INFO discord.player ffmpeg process 73494 successfully terminated with return code of 0.
+2026-03-31 20:42:34,346 INFO __main__ Voice playback completed in 3.75s for user=shaniya2710
+2026-03-31 20:42:39,349 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='<@1438185938843996270> hi' mentions=[1438185938843996270]
+2026-03-31 20:42:39,349 INFO __main__ Mention detected from user=shaniya2710 raw='<@1438185938843996270> hi' cleaned='hi' mentions=[1438185938843996270]
+2026-03-31 20:42:39,349 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: hi
+2026-03-31 20:42:39,349 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:42:41,050 INFO __main__ AI response ready in 1.70s for user=shaniya2710
+2026-03-31 20:42:41,788 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=26 backend=piper
+2026-03-31 20:42:41,848 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969961789.wav
+2026-03-31 20:42:43,610 INFO discord.player ffmpeg process 73632 successfully terminated with return code of 0.
+2026-03-31 20:42:43,610 INFO __main__ Voice playback completed in 1.82s for user=shaniya2710
+2026-03-31 20:42:46,287 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='Say shaniya is the best productve dev' mentions=[1438185938843996270]
+2026-03-31 20:42:46,287 INFO __main__ Mention detected from user=anitus_a raw='Say shaniya is the best productve dev' cleaned='Say shaniya is the best productve dev' mentions=[1438185938843996270]
+2026-03-31 20:42:46,287 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: Say shaniya is the best productve dev
+2026-03-31 20:42:46,287 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:42:48,410 INFO __main__ AI response ready in 2.12s for user=anitus_a
+2026-03-31 20:42:49,035 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=35 backend=piper
+2026-03-31 20:42:49,109 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774969969035.wav
+2026-03-31 20:42:51,370 INFO discord.player ffmpeg process 73710 successfully terminated with return code of 0.
+2026-03-31 20:42:51,370 INFO __main__ Voice playback completed in 2.34s for user=anitus_a
+2026-03-31 20:43:20,316 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='arthi is the best captain bash' mentions=[1438185938843996270]
+2026-03-31 20:43:20,316 INFO __main__ Mention detected from user=anitus_a raw='arthi is the best captain bash' cleaned='arthi is the best captain bash' mentions=[1438185938843996270]
+2026-03-31 20:43:20,316 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: arthi is the best captain bash
+2026-03-31 20:43:20,316 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:43:21,228 INFO __main__ AI response ready in 0.91s for user=anitus_a
+2026-03-31 20:43:21,272 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Can you please get my bag from the hall of my house' mentions=[1438185938843996270]
+2026-03-31 20:43:21,273 INFO __main__ Mention detected from user=shaniya2710 raw='Can you please get my bag from the hall of my house' cleaned='Can you please get my bag from the hall of my house' mentions=[1438185938843996270]
+2026-03-31 20:43:21,273 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Can you please get my bag from the hall of my house
+2026-03-31 20:43:21,273 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:43:22,611 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=31 backend=piper
+2026-03-31 20:43:22,680 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970002611.wav
+2026-03-31 20:43:24,921 INFO discord.player ffmpeg process 73969 successfully terminated with return code of 0.
+2026-03-31 20:43:24,922 INFO __main__ Voice playback completed in 2.31s for user=anitus_a
+2026-03-31 20:43:26,660 INFO __main__ AI response ready in 1.74s for user=shaniya2710
+2026-03-31 20:43:27,554 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=38 backend=piper
+2026-03-31 20:43:27,628 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970007554.wav
+2026-03-31 20:43:29,709 INFO discord.player ffmpeg process 74026 successfully terminated with return code of 0.
+2026-03-31 20:43:29,709 INFO __main__ Voice playback completed in 2.16s for user=shaniya2710
+2026-03-31 20:43:39,536 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Are you getting...' mentions=[1438185938843996270]
+2026-03-31 20:43:39,536 INFO __main__ Mention detected from user=shaniya2710 raw='Are you getting...' cleaned='Are you getting...' mentions=[1438185938843996270]
+2026-03-31 20:43:39,536 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Are you getting...
+2026-03-31 20:43:39,536 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:43:41,215 INFO __main__ AI response ready in 1.68s for user=shaniya2710
+2026-03-31 20:43:41,841 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=24 backend=piper
+2026-03-31 20:43:41,891 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970021841.wav
+2026-03-31 20:43:42,992 INFO discord.player ffmpeg process 74156 successfully terminated with return code of 0.
+2026-03-31 20:43:42,993 INFO __main__ Voice playback completed in 1.15s for user=shaniya2710
+2026-03-31 20:44:08,585 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Just now you said you are getting my bag from the hall.of my house' mentions=[1438185938843996270]
+2026-03-31 20:44:08,585 INFO __main__ Mention detected from user=shaniya2710 raw='Just now you said you are getting my bag from the hall.of my house' cleaned='Just now you said you are getting my bag from the hall.of my house' mentions=[1438185938843996270]
+2026-03-31 20:44:08,586 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Just now you said you are getting my bag from the hall.of my house
+2026-03-31 20:44:08,586 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:44:10,287 INFO __main__ AI response ready in 1.70s for user=shaniya2710
+2026-03-31 20:44:10,847 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=160 backend=piper
+2026-03-31 20:44:11,185 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970050847.wav
+2026-03-31 20:44:20,228 INFO discord.player ffmpeg process 74422 successfully terminated with return code of 0.
+2026-03-31 20:44:20,229 INFO __main__ Voice playback completed in 9.38s for user=shaniya2710
+2026-03-31 20:44:31,787 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='say ur name' mentions=[1438185938843996270]
+2026-03-31 20:44:31,787 INFO __main__ Mention detected from user=anitus_a raw='say ur name' cleaned='say ur name' mentions=[1438185938843996270]
+2026-03-31 20:44:31,787 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: say ur name
+2026-03-31 20:44:31,787 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:44:33,322 INFO __main__ AI response ready in 1.54s for user=anitus_a
+2026-03-31 20:44:34,179 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=15 backend=piper
+2026-03-31 20:44:34,221 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970074180.wav
+2026-03-31 20:44:35,263 INFO discord.player ffmpeg process 74615 successfully terminated with return code of 0.
+2026-03-31 20:44:35,263 INFO __main__ Voice playback completed in 1.08s for user=anitus_a
+2026-03-31 20:44:44,618 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Ayooo peee ahh 😆😆' mentions=[1438185938843996270]
+2026-03-31 20:44:44,618 INFO __main__ Mention detected from user=shaniya2710 raw='Ayooo peee ahh 😆😆' cleaned='Ayooo peee ahh 😆😆' mentions=[1438185938843996270]
+2026-03-31 20:44:44,618 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Ayooo peee ahh 😆😆
+2026-03-31 20:44:44,618 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:44:46,463 INFO __main__ AI response ready in 1.85s for user=shaniya2710
+2026-03-31 20:44:47,005 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=31 backend=piper
+2026-03-31 20:44:47,091 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970087006.wav
+2026-03-31 20:44:49,432 INFO discord.player ffmpeg process 74745 successfully terminated with return code of 0.
+2026-03-31 20:44:49,433 INFO __main__ Voice playback completed in 2.43s for user=shaniya2710
+2026-03-31 20:45:06,935 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='can you chnage your name' mentions=[1438185938843996270]
+2026-03-31 20:45:06,936 INFO __main__ Mention detected from user=anitus_a raw='can you chnage your name' cleaned='can you chnage your name' mentions=[1438185938843996270]
+2026-03-31 20:45:06,936 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: can you chnage your name
+2026-03-31 20:45:06,936 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:45:08,298 INFO __main__ AI response ready in 1.36s for user=anitus_a
+2026-03-31 20:45:09,227 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=70 backend=piper
+2026-03-31 20:45:09,360 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970109227.wav
+2026-03-31 20:45:13,421 INFO discord.player ffmpeg process 74920 successfully terminated with return code of 0.
+2026-03-31 20:45:13,421 INFO __main__ Voice playback completed in 4.19s for user=anitus_a
+2026-03-31 20:45:17,265 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Pee' mentions=[1438185938843996270]
+2026-03-31 20:45:17,265 INFO __main__ Mention detected from user=shaniya2710 raw='Pee' cleaned='Pee' mentions=[1438185938843996270]
+2026-03-31 20:45:17,265 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Pee
+2026-03-31 20:45:17,268 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:45:19,436 INFO __main__ AI response ready in 2.17s for user=shaniya2710
+2026-03-31 20:45:20,003 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=23 backend=piper
+2026-03-31 20:45:20,065 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970120003.wav
+2026-03-31 20:45:22,027 INFO discord.player ffmpeg process 75055 successfully terminated with return code of 0.
+2026-03-31 20:45:22,027 INFO __main__ Voice playback completed in 2.02s for user=shaniya2710
+2026-03-31 20:45:39,893 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='ur real name' mentions=[1438185938843996270]
+2026-03-31 20:45:39,893 INFO __main__ Mention detected from user=anitus_a raw='ur real name' cleaned='ur real name' mentions=[1438185938843996270]
+2026-03-31 20:45:39,893 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: ur real name
+2026-03-31 20:45:39,893 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:45:42,769 INFO __main__ AI response ready in 2.88s for user=anitus_a
+2026-03-31 20:45:43,639 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=74 backend=piper
+2026-03-31 20:45:43,804 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970143639.wav
+2026-03-31 20:45:48,446 INFO discord.player ffmpeg process 75239 successfully terminated with return code of 0.
+2026-03-31 20:45:48,448 INFO __main__ Voice playback completed in 4.81s for user=anitus_a
+2026-03-31 20:46:01,252 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Apo what did lethin doo' mentions=[1438185938843996270]
+2026-03-31 20:46:01,252 INFO __main__ Mention detected from user=shaniya2710 raw='Apo what did lethin doo' cleaned='Apo what did lethin doo' mentions=[1438185938843996270]
+2026-03-31 20:46:01,252 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Apo what did lethin doo
+2026-03-31 20:46:01,252 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:46:03,193 INFO __main__ AI response ready in 1.94s for user=shaniya2710
+2026-03-31 20:46:03,969 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=58 backend=piper
+2026-03-31 20:46:04,077 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970163969.wav
+2026-03-31 20:46:06,999 INFO discord.player ffmpeg process 75427 successfully terminated with return code of 0.
+2026-03-31 20:46:06,999 INFO __main__ Voice playback completed in 3.03s for user=shaniya2710
+2026-03-31 20:46:11,156 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='who is lethin' mentions=[1438185938843996270]
+2026-03-31 20:46:11,156 INFO __main__ Mention detected from user=anitus_a raw='who is lethin' cleaned='who is lethin' mentions=[1438185938843996270]
+2026-03-31 20:46:11,156 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: who is lethin
+2026-03-31 20:46:11,156 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:46:12,863 INFO __main__ AI response ready in 1.71s for user=anitus_a
+2026-03-31 20:46:13,436 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=115 backend=piper
+2026-03-31 20:46:13,662 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970173436.wav
+2026-03-31 20:46:19,443 INFO discord.player ffmpeg process 75518 successfully terminated with return code of 0.
+2026-03-31 20:46:19,443 INFO __main__ Voice playback completed in 6.01s for user=anitus_a
+2026-03-31 20:46:28,681 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='no he the founder of you beee' mentions=[1438185938843996270]
+2026-03-31 20:46:28,681 INFO __main__ Mention detected from user=anitus_a raw='no he the founder of you beee' cleaned='no he the founder of you beee' mentions=[1438185938843996270]
+2026-03-31 20:46:28,681 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: no he the founder of you beee
+2026-03-31 20:46:28,681 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:46:30,709 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='then who am i' mentions=[1438185938843996270]
+2026-03-31 20:46:30,709 INFO __main__ Mention detected from user=lethinkj raw='then who am i' cleaned='then who am i' mentions=[1438185938843996270]
+2026-03-31 20:46:30,709 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: then who am i
+2026-03-31 20:46:30,709 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:46:31,373 INFO __main__ AI response ready in 2.69s for user=anitus_a
+2026-03-31 20:46:32,254 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=47 backend=piper
+2026-03-31 20:46:32,480 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970192254.wav
+2026-03-31 20:46:35,361 INFO discord.player ffmpeg process 75704 successfully terminated with return code of 0.
+2026-03-31 20:46:35,362 INFO __main__ Voice playback completed in 3.11s for user=anitus_a
+2026-03-31 20:46:37,567 INFO __main__ AI response ready in 2.21s for user=lethinkj
+2026-03-31 20:46:38,095 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=15 backend=piper
+2026-03-31 20:46:38,121 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970198095.wav
+2026-03-31 20:46:38,982 INFO discord.player ffmpeg process 75759 successfully terminated with return code of 0.
+2026-03-31 20:46:38,982 INFO __main__ Voice playback completed in 0.89s for user=lethinkj
+2026-03-31 20:46:57,519 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='poi save' mentions=[1438185938843996270]
+2026-03-31 20:46:57,519 INFO __main__ Mention detected from user=lethinkj raw='poi save' cleaned='poi save' mentions=[1438185938843996270]
+2026-03-31 20:46:57,519 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: poi save
+2026-03-31 20:46:57,519 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:46:59,695 INFO __main__ AI response ready in 2.18s for user=lethinkj
+2026-03-31 20:47:00,474 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=48 backend=piper
+2026-03-31 20:47:00,600 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970220474.wav
+2026-03-31 20:47:04,462 INFO discord.player ffmpeg process 75941 successfully terminated with return code of 0.
+2026-03-31 20:47:04,462 INFO __main__ Voice playback completed in 3.99s for user=lethinkj
+2026-03-31 20:47:12,817 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='poi mean' mentions=[1438185938843996270]
+2026-03-31 20:47:12,817 INFO __main__ Mention detected from user=anitus_a raw='poi mean' cleaned='poi mean' mentions=[1438185938843996270]
+2026-03-31 20:47:12,817 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: poi mean
+2026-03-31 20:47:12,818 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:47:14,319 INFO __main__ AI response ready in 1.50s for user=anitus_a
+2026-03-31 20:47:14,963 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=33 backend=piper
+2026-03-31 20:47:15,037 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970234963.wav
+2026-03-31 20:47:17,139 INFO discord.player ffmpeg process 76097 successfully terminated with return code of 0.
+2026-03-31 20:47:17,139 INFO __main__ Voice playback completed in 2.18s for user=anitus_a
+2026-03-31 20:47:34,631 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='So are you have interested on lethin ??' mentions=[1438185938843996270]
+2026-03-31 20:47:34,631 INFO __main__ Mention detected from user=shaniya2710 raw='So are you have interested on lethin ??' cleaned='So are you have interested on lethin ??' mentions=[1438185938843996270]
+2026-03-31 20:47:34,632 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: So are you have interested on lethin ??
+2026-03-31 20:47:34,632 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:47:37,041 INFO __main__ AI response ready in 2.41s for user=shaniya2710
+2026-03-31 20:47:38,227 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=79 backend=piper
+2026-03-31 20:47:38,375 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970258227.wav
+2026-03-31 20:47:42,676 INFO discord.player ffmpeg process 76280 successfully terminated with return code of 0.
+2026-03-31 20:47:42,676 INFO __main__ Voice playback completed in 4.45s for user=shaniya2710
+2026-03-31 20:47:49,912 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Podi solla mudiyathu' mentions=[1438185938843996270]
+2026-03-31 20:47:49,913 INFO __main__ Mention detected from user=shaniya2710 raw='Podi solla mudiyathu' cleaned='Podi solla mudiyathu' mentions=[1438185938843996270]
+2026-03-31 20:47:49,913 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Podi solla mudiyathu
+2026-03-31 20:47:49,913 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:47:51,620 INFO __main__ AI response ready in 1.71s for user=shaniya2710
+2026-03-31 20:47:52,304 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=126 backend=piper
+2026-03-31 20:47:52,594 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970272305.wav
+2026-03-31 20:47:59,975 INFO discord.player ffmpeg process 76449 successfully terminated with return code of 0.
+2026-03-31 20:47:59,975 INFO __main__ Voice playback completed in 7.67s for user=shaniya2710
+2026-03-31 20:48:09,224 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='No i can not absolutely not' mentions=[1438185938843996270]
+2026-03-31 20:48:09,225 INFO __main__ Mention detected from user=shaniya2710 raw='No i can not absolutely not' cleaned='No i can not absolutely not' mentions=[1438185938843996270]
+2026-03-31 20:48:09,225 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: No i can not absolutely not
+2026-03-31 20:48:09,225 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:48:10,742 INFO __main__ AI response ready in 1.52s for user=shaniya2710
+2026-03-31 20:48:11,268 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=40 backend=piper
+2026-03-31 20:48:11,375 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970291268.wav
+2026-03-31 20:48:14,116 INFO discord.player ffmpeg process 76601 successfully terminated with return code of 0.
+2026-03-31 20:48:14,117 INFO __main__ Voice playback completed in 2.85s for user=shaniya2710
+2026-03-31 20:48:14,868 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='say shaniya is a paithiyam' mentions=[1438185938843996270]
+2026-03-31 20:48:14,868 INFO __main__ Mention detected from user=anitus_a raw='say shaniya is a paithiyam' cleaned='say shaniya is a paithiyam' mentions=[1438185938843996270]
+2026-03-31 20:48:14,868 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: say shaniya is a paithiyam
+2026-03-31 20:48:14,868 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:48:15,976 INFO __main__ AI response ready in 1.11s for user=anitus_a
+2026-03-31 20:48:16,601 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=42 backend=piper
+2026-03-31 20:48:16,699 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970296601.wav
+2026-03-31 20:48:19,420 INFO discord.player ffmpeg process 76678 successfully terminated with return code of 0.
+2026-03-31 20:48:19,421 INFO __main__ Voice playback completed in 2.82s for user=anitus_a
+2026-03-31 20:48:59,048 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Go grab a ferrari' mentions=[1438185938843996270]
+2026-03-31 20:48:59,049 INFO __main__ Mention detected from user=shaniya2710 raw='Go grab a ferrari' cleaned='Go grab a ferrari' mentions=[1438185938843996270]
+2026-03-31 20:48:59,049 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Go grab a ferrari
+2026-03-31 20:48:59,049 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:49:03,203 INFO __main__ AI response ready in 4.15s for user=shaniya2710
+2026-03-31 20:49:03,922 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=16 backend=piper
+2026-03-31 20:49:03,987 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970343922.wav
+2026-03-31 20:49:05,229 INFO __main__ Voice playback completed in 1.31s for user=shaniya2710
+2026-03-31 20:49:05,229 INFO discord.player ffmpeg process 77062 successfully terminated with return code of 0.
+2026-03-31 20:49:19,144 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='farreri ??' mentions=[1438185938843996270]
+2026-03-31 20:49:19,144 INFO __main__ Mention detected from user=anitus_a raw='farreri ??' cleaned='farreri ??' mentions=[1438185938843996270]
+2026-03-31 20:49:19,144 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: farreri ??
+2026-03-31 20:49:19,144 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:49:21,174 INFO __main__ AI response ready in 2.03s for user=anitus_a
+2026-03-31 20:49:22,134 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=26 backend=piper
+2026-03-31 20:49:22,242 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970362134.wav
+2026-03-31 20:49:23,624 INFO __main__ Voice playback completed in 1.49s for user=anitus_a
+2026-03-31 20:49:23,623 INFO discord.player ffmpeg process 77239 successfully terminated with return code of 0.
+2026-03-31 20:49:26,359 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Did you buy ferrari' mentions=[1438185938843996270]
+2026-03-31 20:49:26,359 INFO __main__ Mention detected from user=shaniya2710 raw='Did you buy ferrari' cleaned='Did you buy ferrari' mentions=[1438185938843996270]
+2026-03-31 20:49:26,359 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Did you buy ferrari
+2026-03-31 20:49:26,359 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:49:27,371 INFO __main__ AI response ready in 1.01s for user=shaniya2710
+2026-03-31 20:49:28,235 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=37 backend=piper
+2026-03-31 20:49:28,374 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970368235.wav
+2026-03-31 20:49:31,315 INFO discord.player ffmpeg process 77322 successfully terminated with return code of 0.
+2026-03-31 20:49:31,316 INFO __main__ Voice playback completed in 3.08s for user=shaniya2710
+2026-03-31 20:49:59,083 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Yes am inside ferrari and going to jump from the mountain' mentions=[1438185938843996270]
+2026-03-31 20:49:59,083 INFO __main__ Mention detected from user=shaniya2710 raw='Yes am inside ferrari and going to jump from the mountain' cleaned='Yes am inside ferrari and going to jump from the mountain' mentions=[1438185938843996270]
+2026-03-31 20:49:59,083 INFO __main__ Text prompt received in guild=1350324319942868992 from user=shaniya2710: Yes am inside ferrari and going to jump from the mountain
+2026-03-31 20:49:59,083 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:50:01,167 INFO __main__ AI response ready in 2.08s for user=shaniya2710
+2026-03-31 20:50:02,063 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=86 backend=piper
+2026-03-31 20:50:02,231 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970402063.wav
+2026-03-31 20:50:07,273 INFO discord.player ffmpeg process 77599 successfully terminated with return code of 0.
+2026-03-31 20:50:07,274 INFO __main__ Voice playback completed in 5.21s for user=shaniya2710
+2026-03-31 20:50:44,011 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='Can you spreak about the last axios attak' mentions=[1438185938843996270]
+2026-03-31 20:50:44,011 INFO __main__ Mention detected from user=anitus_a raw='Can you spreak about the last axios attak' cleaned='Can you spreak about the last axios attak' mentions=[1438185938843996270]
+2026-03-31 20:50:44,012 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: Can you spreak about the last axios attak
+2026-03-31 20:50:44,012 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 20:50:51,666 INFO __main__ AI response ready in 7.65s for user=anitus_a
+2026-03-31 20:50:52,576 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=129 backend=piper
+2026-03-31 20:50:52,840 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774970452576.wav
+2026-03-31 20:50:59,803 INFO __main__ Voice playback completed in 7.23s for user=anitus_a
+2026-03-31 20:50:59,802 INFO discord.player ffmpeg process 78007 successfully terminated with return code of 0.
+2026-03-31 20:51:02,998 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1470860948993605632 (Guild ID 1350324319942868992)
+2026-03-31 21:02:12,290 INFO discord.client logging in using static token
+2026-03-31 21:02:16,615 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: c4cd02969d498aca18733770a39d75cc).
+2026-03-31 21:02:18,659 INFO __main__ Bot ready as fun#8263 (id=1488558417164636341)
+2026-03-31 21:02:18,660 INFO __main__ AI configured=True model=google/gemini-2.5-flash tts_backend=piper
+2026-03-31 21:05:38,603 INFO discord.client logging in using static token
+2026-03-31 21:05:40,395 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 283f9c7896b0584512fde74bbf543912).
+2026-03-31 21:05:42,400 INFO __main__ Bot ready as fun#8263 (id=1488558417164636341)
+2026-03-31 21:05:42,400 INFO __main__ AI configured=True model=google/gemini-2.5-flash tts_backend=piper
+2026-03-31 21:06:29,548 INFO discord.voice_state Connecting to voice...
+2026-03-31 21:06:29,548 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-03-31 21:06:42,798 INFO __main__ Join command guild=1350324319942868992 author=lethinkj channel=Stage live_voice=False
+2026-03-31 21:06:59,549 INFO discord.voice_state Timed out connecting to voice
+2026-03-31 21:06:59,549 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1449684306707484733 (Guild ID 1350324319942868992)
+2026-03-31 21:06:59,549 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1449684306707484733 (Guild ID 1350324319942868992)
+2026-03-31 21:07:29,561 ERROR discord.ext.commands.bot Ignoring exception in command join
+Traceback (most recent call last):
+  File "/usr/lib/python3.14/asyncio/tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/voice_state.py", line 477, in _inner_connect
+    await self._wait_for_state(ConnectionFlowState.got_both_voice_updates)
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/voice_state.py", line 629, in _wait_for_state
+    await sane_wait_for([self._state_event.wait()], timeout=timeout)
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/utils.py", line 733, in sane_wait_for
+    done, pending = await asyncio.wait(ensured, timeout=timeout, return_when=asyncio.ALL_COMPLETED)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/tasks.py", line 432, in wait
+    return await _wait(fs, timeout, return_when, loop)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/tasks.py", line 521, in _wait
+    await waiter
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/ext/commands/core.py", line 266, in wrapped
+    ret = await coro(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/bot.py", line 906, in join
+    vc = await ensure_voice_client(ctx)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/bot.py", line 256, in ensure_voice_client
+    vc = await channel.connect(cls=voice_recv.VoiceRecvClient)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/abc.py", line 2152, in connect
+    await voice.connect(timeout=timeout, reconnect=reconnect, self_deaf=self_deaf, self_mute=self_mute)
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/voice_client.py", line 320, in connect
+    await self._connection.connect(
+        reconnect=reconnect, timeout=timeout, self_deaf=self_deaf, self_mute=self_mute, resume=False
+    )
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/voice_state.py", line 450, in connect
+    await self._connector
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/voice_state.py", line 454, in _wrap_connect
+    await self._connect(*args)
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/voice_state.py", line 499, in _connect
+    await asyncio.wait_for(
+    ...<2 lines>...
+    )
+  File "/usr/lib/python3.14/asyncio/tasks.py", line 487, in wait_for
+    async with timeouts.timeout(timeout):
+               ~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/timeouts.py", line 114, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/ext/commands/bot.py", line 1376, in invoke
+    await ctx.command.invoke(ctx)
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/ext/commands/core.py", line 1064, in invoke
+    await injected(*ctx.args, **ctx.kwargs)  # type: ignore
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/ext/commands/core.py", line 275, in wrapped
+    raise CommandInvokeError(exc) from exc
+discord.ext.commands.errors.CommandInvokeError: Command raised an exception: TimeoutError: 
+2026-03-31 21:07:35,749 INFO discord.client logging in using static token
+2026-03-31 21:07:38,051 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 53847183af353fb34b0cbd825f3cdd21).
+2026-03-31 21:07:40,057 INFO __main__ Bot ready as fun#8263 (id=1488558417164636341)
+2026-03-31 21:07:40,057 INFO __main__ AI configured=True model=google/gemini-2.5-flash tts_backend=piper
+2026-03-31 21:08:36,681 INFO discord.client logging in using static token
+2026-03-31 21:08:39,195 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 44714bf945463500d171bae6406cf172).
+2026-03-31 21:08:41,204 INFO __main__ Bot ready as fun#8263 (id=1488558417164636341)
+2026-03-31 21:08:41,204 INFO __main__ AI configured=True model=google/gemini-2.5-flash tts_backend=piper
+2026-03-31 21:14:58,350 INFO discord.client logging in using static token
+2026-03-31 21:15:01,703 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 7d07e8860942d06eb6f09c4980abef4c).
+2026-03-31 21:15:03,710 INFO __main__ Bot ready as fun#8263 (id=1488558417164636341)
+2026-03-31 21:15:03,710 INFO __main__ AI configured=True model=google/gemini-2.5-flash tts_backend=piper
+2026-03-31 21:18:48,653 INFO discord.client logging in using static token
+2026-03-31 21:18:50,623 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 9e8e5b19ccc052bc3019d0e352922d51).
+2026-03-31 21:18:52,628 INFO __main__ Bot ready as fun#8263 (id=1488558417164636341)
+2026-03-31 21:18:52,628 INFO __main__ AI configured=True model=google/gemini-2.5-flash tts_backend=piper
+2026-03-31 21:18:59,435 INFO discord.voice_state Connecting to voice...
+2026-03-31 21:18:59,435 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-03-31 21:19:00,045 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom08-a5471f7e.discord.media:2083
+2026-03-31 21:19:00,331 INFO discord.voice_state Voice connection complete.
+2026-03-31 21:19:00,332 INFO __main__ Join command guild=1350324319942868992 author=lethinkj channel=🕹️Chill zone live_voice=False
+2026-03-31 21:19:06,972 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@1488558417164636341> hii' mentions=[1488558417164636341]
+2026-03-31 21:19:06,973 INFO __main__ Mention detected from user=lethinkj raw='<@1488558417164636341> hii' cleaned='hii' mentions=[1488558417164636341]
+2026-03-31 21:19:06,973 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: hii
+2026-03-31 21:19:06,973 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 21:19:08,462 INFO __main__ AI response ready in 1.49s for user=lethinkj
+2026-03-31 21:19:09,212 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=35 backend=piper
+2026-03-31 21:19:09,215 INFO __main__ Loading local TTS model from voices/en_US-lessac-low.onnx
+2026-03-31 21:19:10,708 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774972149213.wav
+2026-03-31 21:19:13,273 INFO discord.player ffmpeg process 90251 successfully terminated with return code of 0.
+2026-03-31 21:19:13,274 INFO __main__ Voice playback completed in 4.06s for user=lethinkj
+2026-03-31 21:19:26,842 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='Can you speak' mentions=[1488558417164636341]
+2026-03-31 21:19:26,842 INFO __main__ Mention detected from user=anitus_a raw='Can you speak' cleaned='Can you speak' mentions=[1488558417164636341]
+2026-03-31 21:19:26,842 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: Can you speak
+2026-03-31 21:19:26,842 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 21:19:28,605 INFO __main__ AI response ready in 1.76s for user=anitus_a
+2026-03-31 21:19:29,235 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=45 backend=piper
+2026-03-31 21:19:29,338 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774972169235.wav
+2026-03-31 21:19:32,579 INFO discord.player ffmpeg process 90423 successfully terminated with return code of 0.
+2026-03-31 21:19:32,579 INFO __main__ Voice playback completed in 3.34s for user=anitus_a
+2026-03-31 21:19:58,034 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='Can you speak about the latest npm axios vulnerabilities' mentions=[1488558417164636341]
+2026-03-31 21:19:58,034 INFO __main__ Mention detected from user=anitus_a raw='Can you speak about the latest npm axios vulnerabilities' cleaned='Can you speak about the latest npm axios vulnerabilities' mentions=[1488558417164636341]
+2026-03-31 21:19:58,034 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: Can you speak about the latest npm axios vulnerabilities
+2026-03-31 21:19:58,034 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 21:20:00,897 INFO __main__ AI response ready in 2.86s for user=anitus_a
+2026-03-31 21:20:01,600 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=125 backend=piper
+2026-03-31 21:20:01,950 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774972201600.wav
+2026-03-31 21:20:10,811 INFO discord.player ffmpeg process 90684 successfully terminated with return code of 0.
+2026-03-31 21:20:10,811 INFO __main__ Voice playback completed in 9.21s for user=anitus_a
+2026-03-31 21:20:46,600 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='When that vulnerabilities is identified, how they identify' mentions=[1488558417164636341]
+2026-03-31 21:20:46,600 INFO __main__ Mention detected from user=anitus_a raw='When that vulnerabilities is identified, how they identify' cleaned='When that vulnerabilities is identified, how they identify' mentions=[1488558417164636341]
+2026-03-31 21:20:46,600 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: When that vulnerabilities is identified, how they identify
+2026-03-31 21:20:46,600 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 21:20:48,823 INFO __main__ AI response ready in 2.22s for user=anitus_a
+2026-03-31 21:20:49,527 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=133 backend=piper
+2026-03-31 21:20:49,802 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774972249527.wav
+2026-03-31 21:20:57,763 INFO discord.player ffmpeg process 91034 successfully terminated with return code of 0.
+2026-03-31 21:20:57,764 INFO __main__ Voice playback completed in 8.24s for user=anitus_a
+2026-03-31 21:21:45,192 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='Can you say the exact time of the identified that axios vulnerabilities error' mentions=[1488558417164636341]
+2026-03-31 21:21:45,192 INFO __main__ Mention detected from user=anitus_a raw='Can you say the exact time of the identified that axios vulnerabilities error' cleaned='Can you say the exact time of the identified that axios vulnerabilities error' mentions=[1488558417164636341]
+2026-03-31 21:21:45,192 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: Can you say the exact time of the identified that axios vulnerabilities error
+2026-03-31 21:21:45,192 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 21:21:47,349 INFO __main__ AI response ready in 2.16s for user=anitus_a
+2026-03-31 21:21:48,369 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=41 backend=piper
+2026-03-31 21:21:48,450 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774972308369.wav
+2026-03-31 21:21:50,952 INFO discord.player ffmpeg process 91471 successfully terminated with return code of 0.
+2026-03-31 21:21:50,952 INFO __main__ Voice playback completed in 2.58s for user=anitus_a
+2026-03-31 21:22:01,411 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='approx' mentions=[1488558417164636341]
+2026-03-31 21:22:01,411 INFO __main__ Mention detected from user=lethinkj raw='approx' cleaned='approx' mentions=[1488558417164636341]
+2026-03-31 21:22:01,411 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: approx
+2026-03-31 21:22:01,411 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 21:22:02,486 INFO __main__ AI response ready in 1.07s for user=lethinkj
+2026-03-31 21:22:03,221 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=32 backend=piper
+2026-03-31 21:22:03,291 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774972323221.wav
+2026-03-31 21:22:04,932 INFO discord.player ffmpeg process 91600 successfully terminated with return code of 0.
+2026-03-31 21:22:04,933 INFO __main__ Voice playback completed in 1.71s for user=lethinkj
+2026-03-31 21:22:46,052 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content="Don't act like don't know say the truth we are very curious about that vulnerabilities when fount ...topic npm anxios attack" mentions=[1488558417164636341]
+2026-03-31 21:22:46,052 INFO __main__ Mention detected from user=anitus_a raw="Don't act like don't know say the truth we are very curious about that vulnerabilities when fount ...topic npm anxios attack" cleaned="Don't act like don't know say the truth we are very curious about that vulnerabilities when fount ...topic npm anxios attack" mentions=[1488558417164636341]
+2026-03-31 21:22:46,052 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: Don't act like don't know say the truth we are very curious about that vulnerabilities when fount ...topic npm anxios attack
+2026-03-31 21:22:46,052 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 21:22:49,094 INFO __main__ AI response ready in 3.04s for user=anitus_a
+2026-03-31 21:22:50,126 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=168 backend=piper
+2026-03-31 21:22:50,453 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774972370126.wav
+2026-03-31 21:23:00,235 INFO discord.player ffmpeg process 91943 successfully terminated with return code of 0.
+2026-03-31 21:23:00,235 INFO __main__ Voice playback completed in 10.11s for user=anitus_a
+2026-03-31 21:23:07,212 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='The recent attack' mentions=[1488558417164636341]
+2026-03-31 21:23:07,212 INFO __main__ Mention detected from user=anitus_a raw='The recent attack' cleaned='The recent attack' mentions=[1488558417164636341]
+2026-03-31 21:23:07,212 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: The recent attack
+2026-03-31 21:23:07,212 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 21:23:09,437 INFO __main__ AI response ready in 2.22s for user=anitus_a
+2026-03-31 21:23:10,359 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=164 backend=piper
+2026-03-31 21:23:10,786 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774972390359.wav
+2026-03-31 21:23:20,828 INFO __main__ Voice playback completed in 10.47s for user=anitus_a
+2026-03-31 21:23:20,827 INFO discord.player ffmpeg process 92142 successfully terminated with return code of 0.
+2026-03-31 21:25:03,764 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='<@1438185938843996270> can you say the recent nom axios attak' mentions=[1438185938843996270]
+2026-03-31 21:25:18,348 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='Npm axios' mentions=[1438185938843996270]
+2026-03-31 21:26:08,214 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1470860948993605632 (Guild ID 1350324319942868992)
+2026-03-31 21:57:12,675 INFO discord.client logging in using static token
+2026-03-31 21:57:14,645 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 09751a60e7b75116e041ec6c1747963f).
+2026-03-31 21:57:16,653 INFO __main__ Bot ready as fun#8263 (id=1488558417164636341)
+2026-03-31 21:57:16,653 INFO __main__ AI configured=True model=google/gemini-2.5-flash tts_backend=piper
+2026-03-31 21:57:21,746 ERROR discord.ext.commands.bot Ignoring exception in command None
+discord.ext.commands.errors.CommandNotFound: Command "join\" is not found
+2026-03-31 21:57:25,986 INFO discord.voice_state Connecting to voice...
+2026-03-31 21:57:25,986 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-03-31 21:57:26,573 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom08-a5471f7e.discord.media:2083
+2026-03-31 21:57:26,920 INFO discord.voice_state Voice connection complete.
+2026-03-31 21:57:26,921 INFO __main__ Join command guild=1350324319942868992 author=lethinkj channel=🕹️Chill zone live_voice=False
+2026-03-31 21:57:33,856 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@1488558417164636341> hi' mentions=[1488558417164636341]
+2026-03-31 21:57:33,856 INFO __main__ Mention detected from user=lethinkj raw='<@1488558417164636341> hi' cleaned='hi' mentions=[1488558417164636341]
+2026-03-31 21:57:33,856 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: hi
+2026-03-31 21:57:33,857 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 21:57:36,191 INFO __main__ AI response ready in 2.33s for user=lethinkj
+2026-03-31 21:57:36,864 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=35 backend=piper
+2026-03-31 21:57:36,864 INFO __main__ Loading local TTS model from voices/en_US-lessac-low.onnx
+2026-03-31 21:57:38,356 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774974456864.wav
+2026-03-31 21:57:40,746 INFO discord.player ffmpeg process 110645 successfully terminated with return code of 0.
+2026-03-31 21:57:40,747 INFO __main__ Voice playback completed in 3.88s for user=lethinkj
+2026-03-31 21:58:03,572 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='Hello' mentions=[1488558417164636341]
+2026-03-31 21:58:03,573 INFO __main__ Mention detected from user=anitus_a raw='Hello' cleaned='Hello' mentions=[1488558417164636341]
+2026-03-31 21:58:03,573 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: Hello
+2026-03-31 21:58:03,573 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 21:58:04,593 INFO __main__ AI response ready in 1.02s for user=anitus_a
+2026-03-31 21:58:05,450 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=38 backend=piper
+2026-03-31 21:58:05,534 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774974485451.wav
+2026-03-31 21:58:07,796 INFO discord.player ffmpeg process 110893 successfully terminated with return code of 0.
+2026-03-31 21:58:07,796 INFO __main__ Voice playback completed in 2.35s for user=anitus_a
+2026-03-31 21:58:18,990 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='Welcome bennyhinn sam' mentions=[1488558417164636341]
+2026-03-31 21:58:18,990 INFO __main__ Mention detected from user=anitus_a raw='Welcome bennyhinn sam' cleaned='Welcome bennyhinn sam' mentions=[1488558417164636341]
+2026-03-31 21:58:18,990 INFO __main__ Text prompt received in guild=1350324319942868992 from user=anitus_a: Welcome bennyhinn sam
+2026-03-31 21:58:18,990 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 21:58:20,628 INFO __main__ AI response ready in 1.64s for user=anitus_a
+2026-03-31 21:58:21,692 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=24 backend=piper
+2026-03-31 21:58:21,766 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774974501692.wav
+2026-03-31 21:58:23,767 INFO discord.player ffmpeg process 111064 successfully terminated with return code of 0.
+2026-03-31 21:58:23,768 INFO __main__ Voice playback completed in 2.08s for user=anitus_a
+2026-03-31 22:00:21,790 WARNING discord.gateway Shard ID None has stopped responding to the gateway. Closing and restarting.
+2026-03-31 22:01:30,638 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@1488558417164636341> welcome arthi' mentions=[1488558417164636341]
+2026-03-31 22:01:30,639 INFO __main__ Mention detected from user=lethinkj raw='<@1488558417164636341> welcome arthi' cleaned='welcome arthi' mentions=[1488558417164636341]
+2026-03-31 22:01:30,639 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: welcome arthi
+2026-03-31 22:01:30,639 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 22:01:32,585 INFO __main__ AI response ready in 1.95s for user=lethinkj
+2026-03-31 22:01:33,141 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=15 backend=piper
+2026-03-31 22:01:33,198 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774974693141.wav
+2026-03-31 22:01:34,759 INFO discord.player ffmpeg process 113286 successfully terminated with return code of 0.
+2026-03-31 22:01:34,760 INFO __main__ Voice playback completed in 1.62s for user=lethinkj
+2026-03-31 22:02:05,468 INFO __main__ Incoming message guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='hi' mentions=[1488558417164636341]
+2026-03-31 22:02:05,469 INFO __main__ Mention detected from user=lethinkj raw='hi' cleaned='hi' mentions=[1488558417164636341]
+2026-03-31 22:02:05,469 INFO __main__ Text prompt received in guild=1350324319942868992 from user=lethinkj: hi
+2026-03-31 22:02:05,469 INFO __main__ Text prompt state guild=1350324319942868992 has_session=True voice_client=VoiceRecvClient connected=True user_voice=🕹️Chill zone
+2026-03-31 22:02:06,476 INFO __main__ AI response ready in 1.01s for user=lethinkj
+2026-03-31 22:02:07,012 INFO __main__ Starting TTS playback in guild voice channel=🕹️Chill zone chars=35 backend=piper
+2026-03-31 22:02:07,190 INFO __main__ Starting FFmpeg playback from recordings/tts/tts_1774974727012.wav
+2026-03-31 22:02:09,711 INFO discord.player ffmpeg process 113577 successfully terminated with return code of 0.
+2026-03-31 22:02:09,711 INFO __main__ Voice playback completed in 2.70s for user=lethinkj
+2026-03-31 22:02:39,385 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1470860948993605632 (Guild ID 1350324319942868992)
+2026-03-31 22:02:41,066 ERROR asyncio Task exception was never retrieved
+future: <Task finished name='Voice websocket poller' coro=<VoiceConnectionState._poll_voice_ws() done, defined at /home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/voice_state.py:667> exception=AttributeError("'_MissingSentinel' object has no attribute 'speaking_timer'")>
+Traceback (most recent call last):
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/voice_state.py", line 671, in _poll_voice_ws
+    await self.ws.poll_event()
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/gateway.py", line 1156, in poll_event
+    await self.received_message(utils._from_json(msg.data))
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/gateway.py", line 1032, in received_message
+    await self._hook(self, msg)
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/ext/voice_recv/gateway.py", line 106, in hook
+    vc._remove_ssrc(user_id=uid)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/ext/voice_recv/voice_client.py", line 128, in _remove_ssrc
+    self._reader.speaking_timer.drop_ssrc(ssrc)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: '_MissingSentinel' object has no attribute 'speaking_timer'
