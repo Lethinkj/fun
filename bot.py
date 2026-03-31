@@ -265,6 +265,13 @@ async def start_healthcheck_server() -> web.AppRunner:
 async def on_ready() -> None:
     log.info("Bot ready as %s (id=%s)", bot.user, getattr(bot.user, "id", None))
     log.info("AI configured=%s model=%s tts_backend=%s", bool(AI_API_KEY and AI_MODEL), AI_MODEL or None, TTS_BACKEND)
+    if TTS_BACKEND == "piper":
+        preload_started = time.monotonic()
+        try:
+            await asyncio.to_thread(get_local_tts_voice)
+            log.info("Local TTS preloaded in %.2fs", time.monotonic() - preload_started)
+        except Exception:
+            log.exception("Failed to preload local TTS voice")
     print(f"Logged in as {bot.user}")
 
 
