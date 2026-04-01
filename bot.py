@@ -65,6 +65,8 @@ log = logging.getLogger(__name__)
 _http_session: Optional[aiohttp.ClientSession] = None
 _local_tts_voice = None
 _local_tts_lock = threading.Lock()
+_discord_login_attempts = 0
+_discord_last_error: Optional[str] = None
 
 
 @dataclass
@@ -87,13 +89,30 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 def configure_logging() -> None:
     root = logging.getLogger()
     root.setLevel(logging.INFO)
-    if any(isinstance(h, RotatingFileHandler) and getattr(h, "baseFilename", "").endswith("bot.log") for h in root.handlers):
+    has_file_handler = any(
+        isinstance(h, RotatingFileHandler) and getattr(h, "baseFilename", "").endswith("bot.log")
+        for h in root.handlers
+    )
+    has_stream_handler = any(
+        isinstance(h, logging.StreamHandler) and not isinstance(h, RotatingFileHandler)
+        for h in root.handlers
+    )
+    if has_file_handler and has_stream_handler:
         return
 
-    file_handler = RotatingFileHandler("bot.log", maxBytes=1_000_000, backupCount=2, encoding="utf-8")
-    file_handler.setLevel(logging.INFO)
-    file_handler.setFormatter(logging.Formatter("%(asctime)s %(levelname)s %(name)s %(message)s"))
-    root.addHandler(file_handler)
+    formatter = logging.Formatter("%(asctime)s %(levelname)s %(name)s %(message)s")
+
+    if not has_stream_handler:
+        stream_handler = logging.StreamHandler()
+        stream_handler.setLevel(logging.INFO)
+        stream_handler.setFormatter(formatter)
+        root.addHandler(stream_handler)
+
+    if not has_file_handler:
+        file_handler = RotatingFileHandler("bot.log", maxBytes=1_000_000, backupCount=2, encoding="utf-8")
+        file_handler.setLevel(logging.INFO)
+        file_handler.setFormatter(formatter)
+        root.addHandler(file_handler)
 
 
 configure_logging()
@@ -136,6 +155,8 @@ async def health_handler(_request: web.Request) -> web.Response:
             "bot_ready": bot.is_ready(),
             "bot_user": str(bot.user) if bot.user else None,
             "active_voice_sessions": len(sessions),
+            "discord_login_attempts": _discord_login_attempts,
+            "discord_last_error": _discord_last_error,
         }
     )
 
@@ -483,6 +504,8 @@ async def leave(ctx: commands.Context) -> None:
 
 
 async def main() -> None:
+    global _discord_login_attempts, _discord_last_error
+
     token = os.getenv("DISCORD_BOT_TOKEN", "")
     if not token:
         raise RuntimeError("Set DISCORD_BOT_TOKEN in .env")
@@ -492,14 +515,20 @@ async def main() -> None:
         attempts = 0
         while True:
             attempts += 1
+            _discord_login_attempts = attempts
             try:
                 await bot.start(token)
+                _discord_last_error = None
                 break
+            except discord.LoginFailure as exc:
+                _discord_last_error = "Discord login failed. Check DISCORD_BOT_TOKEN value."
+                raise RuntimeError(_discord_last_error) from exc
             except discord.HTTPException as exc:
                 status = getattr(exc, "status", None)
                 text = str(exc).lower()
                 is_rate_limited = status == 429 or "error 1015" in text or "rate limited" in text
                 if not is_rate_limited:
+                    _discord_last_error = f"Discord HTTPException status={status}: {exc}"
                     raise
 
                 if attempts > max(1, DISCORD_LOGIN_MAX_RETRIES):
@@ -514,6 +543,9 @@ async def main() -> None:
                 )
                 # Add jitter so multiple restarts do not hit Discord simultaneously.
                 delay += random.uniform(0, min(5.0, delay * 0.15))
+                _discord_last_error = (
+                    f"Rate limited by Discord/Cloudflare (status={status}). Retrying in {delay:.1f}s"
+                )
                 log.warning(
                     "Discord login rate-limited (attempt %s/%s). Retrying in %.1fs",
                     attempts,
