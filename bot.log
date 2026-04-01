@@ -857,3 +857,101 @@ Traceback (most recent call last):
     self._reader.speaking_timer.drop_ssrc(ssrc)
     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 AttributeError: '_MissingSentinel' object has no attribute 'speaking_timer'
+2026-04-01 11:39:01,872 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-01 11:39:01,872 INFO discord.client logging in using static token
+2026-04-01 11:39:03,984 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: a545c16513e3e78135b74b2bd121ca01).
+2026-04-01 11:39:05,998 INFO __main__ Bot ready as fun#8263
+2026-04-01 11:39:33,037 INFO discord.voice_state Connecting to voice...
+2026-04-01 11:39:33,037 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-01 11:39:34,287 INFO discord.voice_state Voice handshake complete. Endpoint found: india11031.discord.media:443
+2026-04-01 11:39:34,696 INFO discord.voice_state Voice connection complete.
+2026-04-01 11:42:03,449 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-01 11:42:03,450 INFO discord.client logging in using static token
+2026-04-01 11:42:05,417 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 125d091750ddeb67b2114feb51cc9fca).
+2026-04-01 11:42:07,427 INFO __main__ Bot ready as fun#8263
+2026-04-01 11:42:27,940 INFO discord.voice_state Connecting to voice...
+2026-04-01 11:42:27,941 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-01 11:42:28,524 INFO discord.voice_state Voice handshake complete. Endpoint found: india11031.discord.media:443
+2026-04-01 11:42:29,202 INFO discord.voice_state Voice connection complete.
+2026-04-01 11:44:06,312 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-01 11:44:06,312 INFO discord.client logging in using static token
+2026-04-01 11:44:08,483 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: b343ddab87f59f0fe384c3b4595830d7).
+2026-04-01 11:44:10,487 INFO __main__ Bot ready as fun#8263
+2026-04-01 11:44:13,800 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-01 11:44:13,800 INFO discord.voice_state Connecting to voice...
+2026-04-01 11:44:13,801 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-01 11:44:14,379 INFO discord.voice_state Voice handshake complete. Endpoint found: india11031.discord.media:443
+2026-04-01 11:44:14,790 INFO discord.voice_state Voice connection complete.
+2026-04-01 11:44:19,998 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@&1488565371282788525> hii' mentions=[] role_mentions=['fun']
+2026-04-01 11:44:19,998 INFO __main__ Prompt trigger matched author=lethinkj prompt='hii'
+2026-04-01 11:44:30,497 INFO discord.player ffmpeg process 162347 successfully terminated with return code of 0.
+2026-04-01 11:47:30,520 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-01 11:47:30,520 INFO discord.client logging in using static token
+2026-04-01 11:47:32,548 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: cda3ccbf90185cb91614ad9fa48eb447).
+2026-04-01 11:47:34,553 INFO __main__ Bot ready as fun#8263
+2026-04-01 11:47:38,297 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-01 11:47:38,297 INFO discord.voice_state Connecting to voice...
+2026-04-01 11:47:38,297 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-01 11:47:39,504 INFO discord.voice_state Voice handshake complete. Endpoint found: india11031.discord.media:443
+2026-04-01 11:47:40,054 INFO discord.voice_state Voice connection complete.
+2026-04-01 11:47:43,523 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@&1488565371282788525> hiii' mentions=[] role_mentions=['fun']
+2026-04-01 11:47:43,523 INFO __main__ Prompt trigger matched author=lethinkj prompt='hiii'
+2026-04-01 11:47:53,252 INFO discord.player ffmpeg process 166103 successfully terminated with return code of 0.
+2026-04-01 11:49:13,928 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-01 11:49:13,928 INFO discord.client logging in using static token
+2026-04-01 11:49:15,935 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 7c66d235e1a2f8a12e4b9587fabd7aab).
+2026-04-01 11:49:17,949 INFO __main__ Bot ready as fun#8263
+2026-04-01 11:49:18,960 INFO __main__ Local piper voice preloaded
+2026-04-01 11:49:26,017 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-01 11:49:26,018 INFO discord.voice_state Connecting to voice...
+2026-04-01 11:49:26,018 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-01 11:49:26,576 INFO discord.voice_state Voice handshake complete. Endpoint found: india11031.discord.media:443
+2026-04-01 11:49:27,257 INFO discord.voice_state Voice connection complete.
+2026-04-01 11:49:32,394 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@&1488565371282788525> hiii' mentions=[] role_mentions=['fun']
+2026-04-01 11:49:32,394 INFO __main__ Prompt trigger matched author=lethinkj prompt='hiii'
+2026-04-01 11:50:10,167 ERROR __main__ AI request failed for prompt: 'hiii'
+Traceback (most recent call last):
+  File "/home/lethin/projects/backup/bot-voice/bot.py", line 367, in handle_prompt
+    response = await generate_ai_reply(prompt, message.guild, message.author)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/bot.py", line 216, in generate_ai_reply
+    async with session.post(url, headers=headers, json=body) as resp:
+               ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/client.py", line 1521, in __aenter__
+    self._resp: _RetType = await self._coro
+                           ^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/client.py", line 766, in _connect_and_send_request
+    await resp.start(conn)
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/client_reqrep.py", line 539, in start
+    message, payload = await protocol.read()  # type: ignore[union-attr]
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/streams.py", line 707, in read
+    await self._waiter
+aiohttp.client_exceptions.ServerDisconnectedError: Server disconnected
+2026-04-01 11:51:22,917 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-01 11:51:22,917 INFO discord.client logging in using static token
+2026-04-01 11:51:25,185 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 7659f023da247a961c1648f03061afb1).
+2026-04-01 11:51:27,195 INFO __main__ Bot ready as fun#8263
+2026-04-01 11:51:28,126 INFO __main__ Local piper voice preloaded
+2026-04-01 11:51:30,192 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-01 11:51:30,193 INFO discord.voice_state Connecting to voice...
+2026-04-01 11:51:30,193 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-01 11:51:31,387 INFO discord.voice_state Voice handshake complete. Endpoint found: india11031.discord.media:443
+2026-04-01 11:51:32,653 INFO discord.voice_state Voice connection complete.
+2026-04-01 11:51:35,866 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@&1488565371282788525> hii' mentions=[] role_mentions=['fun']
+2026-04-01 11:51:35,867 INFO __main__ Prompt trigger matched author=lethinkj prompt='hii'
+2026-04-01 11:51:39,081 INFO discord.player ffmpeg process 170944 successfully terminated with return code of 0.
+2026-04-01 11:51:49,948 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='hii' mentions=[1488558417164636341] role_mentions=[]
+2026-04-01 11:51:49,948 INFO __main__ Prompt trigger matched author=lethinkj prompt='hii'
+2026-04-01 11:51:53,111 INFO discord.player ffmpeg process 171210 successfully terminated with return code of 0.
+2026-04-01 11:52:06,277 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='hii' mentions=[1488558417164636341] role_mentions=[]
+2026-04-01 11:52:06,277 INFO __main__ Prompt trigger matched author=lethinkj prompt='hii'
+2026-04-01 11:52:09,136 INFO discord.player ffmpeg process 171547 successfully terminated with return code of 0.
+2026-04-01 11:52:28,503 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='what is api' mentions=[1488558417164636341] role_mentions=[]
+2026-04-01 11:52:28,503 INFO __main__ Prompt trigger matched author=lethinkj prompt='what is api'
+2026-04-01 11:52:33,594 INFO discord.player ffmpeg process 171966 successfully terminated with return code of 0.
+2026-04-01 11:52:42,849 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='say 1 to 100' mentions=[1488558417164636341] role_mentions=[]
+2026-04-01 11:52:42,849 INFO __main__ Prompt trigger matched author=lethinkj prompt='say 1 to 100'
