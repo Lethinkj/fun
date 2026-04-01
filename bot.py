@@ -51,6 +51,7 @@ MAX_TTS_CHARS = int(os.getenv("MAX_TTS_CHARS", "2000"))
 VOICE_REPLY_MODE = os.getenv("VOICE_REPLY_MODE", "brief").lower()
 VOICE_MAX_CHARS = int(os.getenv("VOICE_MAX_CHARS", "260"))
 LOCAL_TTS_MODEL_PATH = Path(os.getenv("LOCAL_TTS_MODEL_PATH", "voices/en_US-lessac-medium.onnx"))
+PIPER_USE_CUDA = os.getenv("PIPER_USE_CUDA", "false").strip().lower() in {"1", "true", "yes", "on"}
 
 MENTION_TRIGGER = os.getenv("MENTION_TRIGGER", "@fun").strip().lower()
 MENTION_KEYWORD = MENTION_TRIGGER.lstrip("@")
@@ -107,7 +108,7 @@ def get_local_tts_voice() -> Any:
         if _local_tts_voice is None:
             if not LOCAL_TTS_MODEL_PATH.exists():
                 raise RuntimeError(f"Local TTS model not found: {LOCAL_TTS_MODEL_PATH}")
-            _local_tts_voice = PiperVoice.load(LOCAL_TTS_MODEL_PATH)
+            _local_tts_voice = PiperVoice.load(LOCAL_TTS_MODEL_PATH, use_cuda=PIPER_USE_CUDA)
         return _local_tts_voice
 
 
