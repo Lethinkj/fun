@@ -5,6 +5,7 @@ import contextlib
 import json
 import logging
 import os
+import random
 import re
 import shutil
 import threading
@@ -55,6 +56,9 @@ MENTION_TRIGGER = os.getenv("MENTION_TRIGGER", "@fun").strip().lower()
 MENTION_KEYWORD = MENTION_TRIGGER.lstrip("@")
 WEB_HOST = os.getenv("WEB_HOST", "0.0.0.0")
 WEB_PORT = int(os.getenv("PORT", os.getenv("WEB_PORT", "10000")))
+DISCORD_LOGIN_MAX_RETRIES = int(os.getenv("DISCORD_LOGIN_MAX_RETRIES", "8"))
+DISCORD_LOGIN_RETRY_BASE_SECONDS = float(os.getenv("DISCORD_LOGIN_RETRY_BASE_SECONDS", "5"))
+DISCORD_LOGIN_RETRY_MAX_SECONDS = float(os.getenv("DISCORD_LOGIN_RETRY_MAX_SECONDS", "300"))
 
 log = logging.getLogger(__name__)
 _http_session: Optional[aiohttp.ClientSession] = None
@@ -484,7 +488,38 @@ async def main() -> None:
 
     runner = await start_healthcheck_server()
     try:
-        await bot.start(token)
+        attempts = 0
+        while True:
+            attempts += 1
+            try:
+                await bot.start(token)
+                break
+            except discord.HTTPException as exc:
+                status = getattr(exc, "status", None)
+                text = str(exc).lower()
+                is_rate_limited = status == 429 or "error 1015" in text or "rate limited" in text
+                if not is_rate_limited:
+                    raise
+
+                if attempts > max(1, DISCORD_LOGIN_MAX_RETRIES):
+                    raise RuntimeError(
+                        "Discord login kept failing due to rate limiting. "
+                        "Wait for the Cloudflare ban window to expire or redeploy to get a new egress IP."
+                    ) from exc
+
+                delay = min(
+                    DISCORD_LOGIN_RETRY_BASE_SECONDS * (2 ** (attempts - 1)),
+                    DISCORD_LOGIN_RETRY_MAX_SECONDS,
+                )
+                # Add jitter so multiple restarts do not hit Discord simultaneously.
+                delay += random.uniform(0, min(5.0, delay * 0.15))
+                log.warning(
+                    "Discord login rate-limited (attempt %s/%s). Retrying in %.1fs",
+                    attempts,
+                    max(1, DISCORD_LOGIN_MAX_RETRIES),
+                    delay,
+                )
+                await asyncio.sleep(delay)
     finally:
         if _http_session and not _http_session.closed:
             await _http_session.close()
