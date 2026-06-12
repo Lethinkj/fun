@@ -6522,3 +6522,1028 @@ AttributeError: '_MissingSentinel' object has no attribute 'speaking_timer'
 2026-04-17 20:41:55,081 INFO __main__ Local piper voice preloaded
 2026-04-17 20:41:55,481 INFO httpx HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-tiny.en/revision/main "HTTP/1.1 200 OK"
 2026-04-17 20:41:55,946 INFO __main__ Local ASR model preloaded
+2026-04-17 21:00:22,926 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=arthi_123 content='owlpost.quest@gmail.com' mentions=[] role_mentions=[]
+2026-04-17 21:10:31,593 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='bro become teacher' mentions=[] role_mentions=[]
+2026-04-17 21:12:01,762 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-17 21:12:01,764 INFO discord.voice_state Connecting to voice...
+2026-04-17 21:12:01,764 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-17 21:12:02,356 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom09-b01b2871.discord.media:2096
+2026-04-17 21:12:02,622 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 0}
+2026-04-17 21:12:02,622 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 1}
+2026-04-17 21:12:02,623 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 2}
+2026-04-17 21:12:02,623 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 3}
+2026-04-17 21:12:02,623 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 4}
+2026-04-17 21:12:02,623 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 5}
+2026-04-17 21:12:02,623 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 6}
+2026-04-17 21:12:02,624 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 7}
+2026-04-17 21:12:02,624 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 8}
+2026-04-17 21:12:02,624 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 9}
+2026-04-17 21:12:02,624 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 10}
+2026-04-17 21:12:02,625 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 11}
+2026-04-17 21:12:02,625 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 12}
+2026-04-17 21:12:02,625 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 13}
+2026-04-17 21:12:02,625 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 14}
+2026-04-17 21:12:02,668 INFO discord.voice_state Voice connection complete.
+2026-04-17 21:12:02,668 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 15}
+2026-04-17 21:12:03,023 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 18}
+2026-04-17 21:12:03,451 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:04,452 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:05,453 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:06,454 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:07,456 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:08,456 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:09,458 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:10,462 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:11,460 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:11,916 INFO faster_whisper Processing audio with duration 00:02.985
+2026-04-17 21:12:12,462 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:12,628 INFO __main__ Live voice transcript: ''
+2026-04-17 21:12:13,476 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:14,109 INFO faster_whisper Processing audio with duration 00:03.248
+2026-04-17 21:12:14,462 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:14,710 INFO __main__ Live voice transcript: ''
+2026-04-17 21:12:15,429 INFO faster_whisper Processing audio with duration 00:00.895
+2026-04-17 21:12:15,467 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:15,927 INFO __main__ Live voice transcript: 'Thank you.'
+2026-04-17 21:12:16,464 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:17,466 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:18,467 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:19,467 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:20,470 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:21,468 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:22,470 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:23,471 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:24,446 INFO discord.player ffmpeg process 51416 successfully terminated with return code of 0.
+2026-04-17 21:12:24,472 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:25,473 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:26,474 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:27,423 INFO faster_whisper Processing audio with duration 00:03.240
+2026-04-17 21:12:27,476 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:28,005 INFO __main__ Live voice transcript: ''
+2026-04-17 21:12:28,501 INFO faster_whisper Processing audio with duration 00:04.495
+2026-04-17 21:12:28,501 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:29,123 INFO __main__ Live voice transcript: ''
+2026-04-17 21:12:29,478 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:29,695 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=47840) [47844, 47845]
+2026-04-17 21:12:30,481 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:31,481 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:32,482 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:33,482 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:34,484 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:35,485 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:36,628 INFO faster_whisper Processing audio with duration 00:01.425
+2026-04-17 21:12:36,645 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:37,246 INFO __main__ Live voice transcript: ''
+2026-04-17 21:12:37,488 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:38,488 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:39,489 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:40,492 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:40,731 INFO faster_whisper Processing audio with duration 00:04.168
+2026-04-17 21:12:41,376 INFO __main__ Live voice transcript: ''
+2026-04-17 21:12:41,492 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:41,875 INFO faster_whisper Processing audio with duration 00:02.948
+2026-04-17 21:12:42,461 INFO __main__ Live voice transcript: ''
+2026-04-17 21:12:42,493 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:43,494 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:44,496 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:45,495 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:46,496 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:47,499 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:48,515 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:49,500 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:50,501 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:51,503 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:52,508 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:52,742 INFO faster_whisper Processing audio with duration 00:07.402
+2026-04-17 21:12:53,334 INFO __main__ Live voice transcript: ''
+2026-04-17 21:12:53,505 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:54,505 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:55,506 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:56,507 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:57,509 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:12:57,530 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='!leave' mentions=[] role_mentions=[]
+2026-04-17 21:12:57,531 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1350324320672546826 (Guild ID 1350324319942868992)
+2026-04-17 21:14:14,690 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='if its tech let them  to play stone paper scissors' mentions=[] role_mentions=[]
+2026-04-17 21:15:35,155 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='lifnan' mentions=[] role_mentions=[]
+2026-04-17 21:16:02,427 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='snakes' mentions=[] role_mentions=[]
+2026-04-17 21:16:10,931 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=arthi_123 content='The Wizarding Puzzle Trials' mentions=[] role_mentions=[]
+2026-04-17 21:16:41,860 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-17 21:16:41,860 INFO discord.client logging in using static token
+2026-04-17 21:16:43,948 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 444397748715d492394de8ad7fd58459).
+2026-04-17 21:16:45,957 INFO __main__ Bot ready as fun#8263
+2026-04-17 21:16:45,958 INFO __main__ Applied Opus decode guard for live voice receive
+2026-04-17 21:16:48,857 INFO __main__ Local piper voice preloaded
+2026-04-17 21:16:48,858 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-17 21:16:48,859 INFO discord.voice_state Connecting to voice...
+2026-04-17 21:16:48,860 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-17 21:16:49,287 INFO httpx HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small.en/revision/main "HTTP/1.1 200 OK"
+2026-04-17 21:16:49,488 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom09-b01b2871.discord.media:2096
+2026-04-17 21:16:49,622 INFO httpx HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-17 21:16:49,650 INFO httpx HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/vocabulary.txt "HTTP/1.1 307 Temporary Redirect"
+2026-04-17 21:16:49,696 INFO httpx HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-04-17 21:16:49,721 INFO httpx HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/model.bin "HTTP/1.1 302 Found"
+2026-04-17 21:16:49,748 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 0}
+2026-04-17 21:16:49,749 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 1}
+2026-04-17 21:16:49,749 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 2}
+2026-04-17 21:16:49,749 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 3}
+2026-04-17 21:16:49,750 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 4}
+2026-04-17 21:16:49,750 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 5}
+2026-04-17 21:16:49,750 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 6}
+2026-04-17 21:16:49,750 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 7}
+2026-04-17 21:16:49,750 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 8}
+2026-04-17 21:16:49,751 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 9}
+2026-04-17 21:16:49,751 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 10}
+2026-04-17 21:16:49,751 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 11}
+2026-04-17 21:16:49,751 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 12}
+2026-04-17 21:16:49,751 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 13}
+2026-04-17 21:16:49,752 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 14}
+2026-04-17 21:16:49,801 INFO discord.voice_state Voice connection complete.
+2026-04-17 21:16:49,802 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 15}
+2026-04-17 21:16:49,926 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small.en/d1d751a5f8271d482d14ca55d9e2deeebbae577f/vocabulary.txt "HTTP/1.1 200 OK"
+2026-04-17 21:16:49,927 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small.en/d1d751a5f8271d482d14ca55d9e2deeebbae577f/config.json "HTTP/1.1 200 OK"
+2026-04-17 21:16:49,975 INFO httpx HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small.en/d1d751a5f8271d482d14ca55d9e2deeebbae577f/tokenizer.json "HTTP/1.1 200 OK"
+2026-04-17 21:16:49,988 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 18}
+2026-04-17 21:16:50,028 INFO httpx HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small.en/xet-read-token/d1d751a5f8271d482d14ca55d9e2deeebbae577f "HTTP/1.1 200 OK"
+2026-04-17 21:16:50,204 INFO httpx HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small.en/d1d751a5f8271d482d14ca55d9e2deeebbae577f/config.json "HTTP/1.1 200 OK"
+2026-04-17 21:16:50,241 INFO httpx HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small.en/d1d751a5f8271d482d14ca55d9e2deeebbae577f/vocabulary.txt "HTTP/1.1 200 OK"
+2026-04-17 21:16:50,273 INFO httpx HTTP Request: GET https://huggingface.co/api/resolve-cache/models/Systran/faster-whisper-small.en/d1d751a5f8271d482d14ca55d9e2deeebbae577f/tokenizer.json "HTTP/1.1 200 OK"
+2026-04-17 21:16:50,763 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:16:51,762 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:16:51,901 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 19}
+2026-04-17 21:16:52,763 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:16:53,765 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:16:54,764 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:16:55,300 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=55360) [55362, 55363]
+2026-04-17 21:16:55,311 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=55368) [55370, 55371]
+2026-04-17 21:16:55,491 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=55455) [55459, 55461]
+2026-04-17 21:16:55,535 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=55487) [55489, 55491]
+2026-04-17 21:16:55,571 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=55517) [55521, 55523]
+2026-04-17 21:16:55,579 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=55524) [55526, 55529]
+2026-04-17 21:16:55,586 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=55531) [55533, 55534]
+2026-04-17 21:16:55,598 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=55541) [55685, 55686]
+2026-04-17 21:16:55,643 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=55699) [55701, 55702]
+2026-04-17 21:16:55,718 WARNING discord.ext.voice_recv.opus 2 packets were lost being flushed in decoder-1149
+ --> (last=55738) [56024, 56025, 56027]
+2026-04-17 21:16:55,766 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=56075) [56079, 56082]
+2026-04-17 21:16:55,773 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=56084) [56398, 56399]
+2026-04-17 21:16:55,787 WARNING discord.ext.voice_recv.opus 2 packets were lost being flushed in decoder-1149
+ --> (last=56409) [56412, 56415, 56417]
+2026-04-17 21:16:55,792 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=56418) [56421, 56422]
+2026-04-17 21:16:55,797 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1134
+ --> (last=47124) [47128, 47136]
+2026-04-17 21:16:55,848 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1149
+ --> (last=56445) [56447, 56449]
+2026-04-17 21:16:55,851 WARNING discord.ext.voice_recv.opus 3 packets were lost being flushed in decoder-1149
+ --> (last=56450) [56623, 56624, 56625, 56626]
+2026-04-17 21:16:55,855 WARNING discord.ext.voice_recv.opus 2 packets were lost being flushed in decoder-1134
+ --> (last=47128) [47139, 47140, 47141]
+2026-04-17 21:16:55,864 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:16:55,867 WARNING discord.ext.voice_recv.opus 2 packets were lost being flushed in decoder-1142
+ --> (last=52322) [52324, 52325, 52326]
+2026-04-17 21:16:56,765 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:16:57,775 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:16:58,792 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:16:59,769 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:16:59,860 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='get lost' mentions=[] role_mentions=[]
+2026-04-17 21:17:00,779 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:01,771 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:02,807 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:03,807 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:04,794 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:05,871 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:06,885 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:08,055 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:08,947 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:10,012 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:10,991 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 20}
+2026-04-17 21:17:11,116 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:11,769 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 23}
+2026-04-17 21:17:12,135 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:13,119 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:14,144 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:15,043 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:16,023 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:17,050 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:18,474 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:19,426 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1142
+ --> (last=52552) [52554, 52555]
+2026-04-17 21:17:19,477 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:19,950 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1142
+ --> (last=52580) [52583, 52584]
+2026-04-17 21:17:20,267 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1142
+ --> (last=52596) [52599, 52600]
+2026-04-17 21:17:20,375 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1142
+ --> (last=52602) [52604, 52605]
+2026-04-17 21:17:20,474 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:20,557 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1188
+ --> (last=43873) [43876, 43877]
+2026-04-17 21:17:21,348 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:22,472 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:23,308 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:24,403 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:25,414 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:25,793 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> get lost' mentions=[] role_mentions=[]
+2026-04-17 21:17:26,329 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:27,374 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:28,019 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:28,902 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:29,842 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:30,840 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:31,846 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:32,839 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:33,844 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:34,839 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:35,856 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:36,847 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:37,848 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:38,865 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:39,860 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:40,863 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:41,845 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:42,859 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:43,858 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:44,858 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:45,832 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:46,847 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:47,857 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:48,815 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:49,865 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:50,848 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:51,865 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:52,867 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:53,849 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:54,904 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:55,860 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:56,845 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:57,887 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:58,869 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:59,827 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:17:59,832 INFO httpx HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-small.en/revision/main "HTTP/1.1 200 OK"
+2026-04-17 21:18:00,184 INFO httpx HTTP Request: HEAD https://huggingface.co/Systran/faster-whisper-small.en/resolve/d1d751a5f8271d482d14ca55d9e2deeebbae577f/model.bin "HTTP/1.1 302 Found"
+2026-04-17 21:18:00,828 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:01,828 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:02,889 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:03,854 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:04,852 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:05,855 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:06,858 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:07,919 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:16,125 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-17 21:18:16,126 INFO discord.client logging in using static token
+2026-04-17 21:18:17,939 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: cc718f3d1962a6b4e5d6c32c37cf4818).
+2026-04-17 21:18:19,949 INFO __main__ Bot ready as fun#8263
+2026-04-17 21:18:19,950 INFO __main__ Applied Opus decode guard for live voice receive
+2026-04-17 21:18:22,899 INFO __main__ Local piper voice preloaded
+2026-04-17 21:18:22,900 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-17 21:18:22,903 INFO discord.voice_state Connecting to voice...
+2026-04-17 21:18:22,904 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-17 21:18:23,261 INFO httpx HTTP Request: GET https://huggingface.co/api/models/Systran/faster-whisper-tiny.en/revision/main "HTTP/1.1 200 OK"
+2026-04-17 21:18:23,717 INFO __main__ Local ASR model preloaded
+2026-04-17 21:18:23,994 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom09-b01b2871.discord.media:2096
+2026-04-17 21:18:24,269 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 0}
+2026-04-17 21:18:24,270 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 1}
+2026-04-17 21:18:24,270 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 2}
+2026-04-17 21:18:24,270 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 3}
+2026-04-17 21:18:24,271 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 4}
+2026-04-17 21:18:24,271 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 5}
+2026-04-17 21:18:24,271 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 6}
+2026-04-17 21:18:24,271 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 7}
+2026-04-17 21:18:24,272 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 8}
+2026-04-17 21:18:24,272 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 9}
+2026-04-17 21:18:24,272 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 10}
+2026-04-17 21:18:24,272 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 11}
+2026-04-17 21:18:24,324 INFO discord.voice_state Voice connection complete.
+2026-04-17 21:18:24,324 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 12}
+2026-04-17 21:18:24,404 INFO discord.ext.voice_recv.reader Received packet for unknown ssrc 1142:
+<RTPPacket ssrc=1142, sequence=53703, timestamp=2602714673, size=70, ext={5}>
+2026-04-17 21:18:24,415 INFO discord.ext.voice_recv.reader Received packet for unknown ssrc 1142:
+<RTPPacket ssrc=1142, sequence=53705, timestamp=2602733873, size=70, ext={5}>
+2026-04-17 21:18:24,421 INFO discord.ext.voice_recv.reader Received packet for unknown ssrc 1142:
+<RTPPacket ssrc=1142, sequence=53706, timestamp=2602733873, size=70, ext={5}>
+2026-04-17 21:18:24,422 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1142
+ --> (last=53703) [53705, 53706]
+2026-04-17 21:18:24,515 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 15}
+2026-04-17 21:18:24,853 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:25,854 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:26,855 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:27,855 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:28,857 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:29,858 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:30,064 INFO faster_whisper Processing audio with duration 00:01.065
+2026-04-17 21:18:30,461 INFO discord.ext.voice_recv.gateway WS payload has extra keys: {'seq': 16}
+2026-04-17 21:18:30,487 WARNING discord.ext.voice_recv.opus 1 packets were lost being flushed in decoder-1142
+ --> (last=53705) [53713, 53714]
+2026-04-17 21:18:30,739 INFO __main__ Live voice transcript: ''
+2026-04-17 21:18:30,859 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:31,859 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:32,859 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:33,861 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:34,773 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='<@1488558417164636341>' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:18:34,774 INFO __main__ Prompt trigger matched author=lethinkj prompt=''
+2026-04-17 21:18:34,861 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:35,863 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:36,865 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:37,987 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:37,988 INFO faster_whisper Processing audio with duration 00:02.210
+2026-04-17 21:18:38,535 INFO __main__ Live voice transcript: ''
+2026-04-17 21:18:38,867 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:39,868 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:40,868 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:41,868 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:42,871 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:44,021 INFO faster_whisper Processing audio with duration 00:00.822
+2026-04-17 21:18:44,025 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:44,558 INFO __main__ Live voice transcript: 'Thank you.'
+2026-04-17 21:18:44,873 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:45,873 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:46,875 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:47,876 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:48,877 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:49,878 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:50,878 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:51,880 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:52,881 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:53,882 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:54,639 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> hiii how are you' mentions=[] role_mentions=[]
+2026-04-17 21:18:54,883 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:55,884 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:56,594 INFO discord.player ffmpeg process 55808 successfully terminated with return code of 0.
+2026-04-17 21:18:56,800 INFO faster_whisper Processing audio with duration 00:01.138
+2026-04-17 21:18:56,886 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:57,349 INFO __main__ Live voice transcript: ''
+2026-04-17 21:18:57,841 INFO faster_whisper Processing audio with duration 00:00.922
+2026-04-17 21:18:57,885 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:58,398 INFO __main__ Live voice transcript: ''
+2026-04-17 21:18:58,646 INFO faster_whisper Processing audio with duration 00:03.445
+2026-04-17 21:18:58,887 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:18:59,186 INFO __main__ Live voice transcript: ''
+2026-04-17 21:18:59,445 INFO faster_whisper Processing audio with duration 00:01.792
+2026-04-17 21:18:59,888 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:00,004 INFO __main__ Live voice transcript: ''
+2026-04-17 21:19:00,891 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:01,889 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:02,891 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:03,071 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> shut up' mentions=[] role_mentions=[]
+2026-04-17 21:19:03,892 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:04,525 INFO faster_whisper Processing audio with duration 00:01.525
+2026-04-17 21:19:04,529 WARNING discord.ext.voice_recv.opus 2 packets were lost being flushed in decoder-1142
+ --> (last=54133) [54135, 54134, 54136]
+2026-04-17 21:19:04,893 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:05,029 INFO __main__ Live voice transcript: ''
+2026-04-17 21:19:05,894 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:06,895 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:07,897 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:08,897 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:10,024 INFO faster_whisper Processing audio with duration 00:01.562
+2026-04-17 21:19:10,051 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:10,633 INFO __main__ Live voice transcript: ''
+2026-04-17 21:19:10,900 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:11,901 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:12,610 INFO faster_whisper Processing audio with duration 00:00.975
+2026-04-17 21:19:12,901 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:13,196 INFO __main__ Live voice transcript: 'Thank you.'
+2026-04-17 21:19:13,903 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:14,903 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:15,905 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:16,907 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:17,908 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:18,909 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:19,910 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:20,910 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:21,088 INFO discord.player ffmpeg process 56171 successfully terminated with return code of 0.
+2026-04-17 21:19:21,587 INFO faster_whisper Processing audio with duration 00:03.395
+2026-04-17 21:19:21,913 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:22,108 INFO __main__ Live voice transcript: ''
+2026-04-17 21:19:22,598 INFO faster_whisper Processing audio with duration 00:01.378
+2026-04-17 21:19:22,914 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:23,115 INFO __main__ Live voice transcript: ''
+2026-04-17 21:19:23,915 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:24,916 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:25,917 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:26,918 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:27,918 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:28,920 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:29,655 INFO faster_whisper Processing audio with duration 00:02.178
+2026-04-17 21:19:29,921 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:30,263 INFO __main__ Live voice transcript: 'Thank you.'
+2026-04-17 21:19:30,921 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:31,923 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:32,924 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:33,925 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:34,926 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:35,926 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:36,927 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:37,928 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:38,929 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:39,934 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:40,932 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:41,933 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:42,297 INFO discord.player ffmpeg process 56423 successfully terminated with return code of 0.
+2026-04-17 21:19:42,762 INFO faster_whisper Processing audio with duration 00:05.008
+2026-04-17 21:19:42,934 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:43,356 INFO __main__ Live voice transcript: ''
+2026-04-17 21:19:43,614 INFO faster_whisper Processing audio with duration 00:03.728
+2026-04-17 21:19:43,942 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:44,203 INFO __main__ Live voice transcript: ''
+2026-04-17 21:19:44,675 INFO faster_whisper Processing audio with duration 00:01.025
+2026-04-17 21:19:44,936 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:45,171 INFO __main__ Live voice transcript: ''
+2026-04-17 21:19:45,955 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:46,940 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:47,941 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:48,942 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:49,944 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:50,172 INFO faster_whisper Processing audio with duration 00:03.342
+2026-04-17 21:19:50,735 INFO __main__ Live voice transcript: ''
+2026-04-17 21:19:50,946 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:51,948 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:52,947 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:53,948 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:54,972 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:54,975 INFO faster_whisper Processing audio with duration 00:00.928
+2026-04-17 21:19:55,504 INFO __main__ Live voice transcript: '.'
+2026-04-17 21:19:55,949 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:56,951 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:57,952 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:58,954 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:19:59,954 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:20:00,954 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:20:01,955 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:20:02,957 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:20:03,958 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:20:04,959 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:20:05,960 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:20:06,961 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:20:07,962 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:20:08,963 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:20:08,978 INFO discord.player ffmpeg process 56730 successfully terminated with return code of 0.
+2026-04-17 21:20:09,446 INFO faster_whisper Processing audio with duration 00:01.852
+2026-04-17 21:20:09,963 INFO discord.ext.voice_recv.reader Received unexpected rtcp packet: type=200, <class 'discord.ext.voice_recv.rtp.SenderReportPacket'>
+2026-04-17 21:20:10,038 INFO __main__ Live voice transcript: ''
+2026-04-17 21:20:10,283 INFO faster_whisper Processing audio with duration 00:02.270
+2026-04-17 21:20:10,284 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='!leave' mentions=[] role_mentions=[]
+2026-04-17 21:20:10,289 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1350324320672546826 (Guild ID 1350324319942868992)
+2026-04-17 21:21:22,462 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-17 21:21:22,462 INFO discord.client logging in using static token
+2026-04-17 21:21:24,413 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 02618504af0cc0759a3dcf762c117e05).
+2026-04-17 21:21:26,420 INFO __main__ Bot ready as fun#8263
+2026-04-17 21:21:29,823 INFO __main__ Local piper voice preloaded
+2026-04-17 21:21:33,222 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-17 21:21:33,224 INFO discord.voice_state Connecting to voice...
+2026-04-17 21:21:33,224 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-17 21:21:33,905 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom09-b01b2871.discord.media:2096
+2026-04-17 21:21:34,497 INFO discord.voice_state Voice connection complete.
+2026-04-17 21:21:40,716 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='<@&1488565371282788525> hii' mentions=[] role_mentions=['fun']
+2026-04-17 21:21:40,717 INFO __main__ Prompt trigger matched author=lethinkj prompt='hii'
+2026-04-17 21:21:46,686 INFO discord.player ffmpeg process 57908 successfully terminated with return code of 0.
+2026-04-17 21:22:17,676 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> what is your hello counter' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:22:17,676 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> what is your hello counter'
+2026-04-17 21:22:30,235 INFO discord.player ffmpeg process 58302 successfully terminated with return code of 0.
+2026-04-17 21:22:49,732 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> i am not your honey, u misunderstood' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:22:49,732 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> i am not your honey, u misunderstood'
+2026-04-17 21:22:58,489 INFO discord.player ffmpeg process 58642 successfully terminated with return code of 0.
+2026-04-17 21:23:11,002 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> tats even worse' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:23:11,002 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> tats even worse'
+2026-04-17 21:23:18,998 INFO discord.player ffmpeg process 58892 successfully terminated with return code of 0.
+2026-04-17 21:23:38,018 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='see athaye na convince panite' mentions=[] role_mentions=[]
+2026-04-17 21:24:03,620 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> can you break lethin bro head' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:24:03,620 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> can you break lethin bro head'
+2026-04-17 21:24:14,355 INFO discord.player ffmpeg process 59412 successfully terminated with return code of 0.
+2026-04-17 21:24:18,976 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=arthi_123 content='<@1488558417164636341>  tell something abt Basher Lethin, who have designed u...' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:24:18,976 INFO __main__ Prompt trigger matched author=arthi_123 prompt='tell something abt Basher Lethin, who have designed u...'
+2026-04-17 21:24:27,836 INFO discord.player ffmpeg process 59560 successfully terminated with return code of 0.
+2026-04-17 21:24:55,168 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> how can you be so rube. you dont know anything about your creator' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:24:55,169 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> how can you be so rube. you dont know anything about your creator'
+2026-04-17 21:25:07,374 INFO discord.player ffmpeg process 59887 successfully terminated with return code of 0.
+2026-04-17 21:25:25,032 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> u think you arefabulous ?' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:25:25,032 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> u think you arefabulous ?'
+2026-04-17 21:25:35,120 INFO discord.player ffmpeg process 60162 successfully terminated with return code of 0.
+2026-04-17 21:25:53,564 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> not compared with me' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:25:53,565 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> not compared with me'
+2026-04-17 21:26:03,869 INFO discord.player ffmpeg process 60408 successfully terminated with return code of 0.
+2026-04-17 21:26:14,927 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> i told you im not youur honey' mentions=[] role_mentions=[]
+2026-04-17 21:26:33,266 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> thats ridiculous' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:26:33,267 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> thats ridiculous'
+2026-04-17 21:26:48,904 INFO discord.player ffmpeg process 60837 successfully terminated with return code of 0.
+2026-04-17 21:27:20,975 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> who is gonna live in denial, if u had a face i will smash it so that you wont recognize it anymore' mentions=[] role_mentions=[]
+2026-04-17 21:27:55,047 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> who is gonna live in denial, if u had a face i will smash it so that you wont recognize it anymore' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:27:55,048 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> who is gonna live in denial, if u had a face i will smash it so that you wont recognize it anymore'
+2026-04-17 21:28:12,356 INFO discord.player ffmpeg process 61490 successfully terminated with return code of 0.
+2026-04-17 21:28:24,404 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> but u dont have a brain' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:28:24,405 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> but u dont have a brain'
+2026-04-17 21:28:34,788 INFO discord.player ffmpeg process 61693 successfully terminated with return code of 0.
+2026-04-17 21:29:02,749 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> not more powerful than a human like me huh! without us you are nothing' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:29:02,750 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> not more powerful than a human like me huh! without us you are nothing'
+2026-04-17 21:29:12,259 INFO discord.player ffmpeg process 62034 successfully terminated with return code of 0.
+2026-04-17 21:29:34,125 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> you are nothing, they forced me to speak with you' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:29:34,125 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> you are nothing, they forced me to speak with you'
+2026-04-17 21:29:44,907 INFO discord.player ffmpeg process 62336 successfully terminated with return code of 0.
+2026-04-17 21:29:55,551 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> so the problem is youu' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:29:55,551 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> so the problem is youu'
+2026-04-17 21:30:05,235 INFO discord.player ffmpeg process 62525 successfully terminated with return code of 0.
+2026-04-17 21:30:24,384 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> i have told youu i am not your honey' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:30:24,384 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> i have told youu i am not your honey'
+2026-04-17 21:30:43,294 INFO discord.player ffmpeg process 62876 successfully terminated with return code of 0.
+2026-04-17 21:30:57,067 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> thats a good girl behaviour' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:30:57,067 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> thats a good girl behaviour'
+2026-04-17 21:31:16,584 INFO discord.player ffmpeg process 63154 successfully terminated with return code of 0.
+2026-04-17 21:31:45,562 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> huh! you dont take orders? grow up you are made for that' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:31:45,562 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> huh! you dont take orders? grow up you are made for that'
+2026-04-17 21:32:04,909 INFO discord.player ffmpeg process 63539 successfully terminated with return code of 0.
+2026-04-17 21:32:19,815 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> stop petting me u understood' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:32:19,816 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> stop petting me u understood'
+2026-04-17 21:32:27,993 INFO discord.player ffmpeg process 63809 successfully terminated with return code of 0.
+2026-04-17 21:32:57,587 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> u cant even touch a dust . can you?' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:32:57,588 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> u cant even touch a dust . can you?'
+2026-04-17 21:33:19,577 INFO discord.player ffmpeg process 64198 successfully terminated with return code of 0.
+2026-04-17 21:33:36,758 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> yeah you are the unwanted dust' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:33:36,759 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> yeah you are the unwanted dust'
+2026-04-17 21:33:48,212 INFO discord.player ffmpeg process 64511 successfully terminated with return code of 0.
+2026-04-17 21:33:48,309 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='naanu  sapda pore' mentions=[] role_mentions=[]
+2026-04-17 21:34:13,950 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> i have a bright life. not as you doing the same things everyday' mentions=[] role_mentions=[]
+2026-04-17 21:34:37,135 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> bye' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:34:37,135 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> bye'
+2026-04-17 21:34:45,064 INFO discord.player ffmpeg process 65050 successfully terminated with return code of 0.
+2026-04-17 21:34:57,924 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> u think i walk throught doors' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:34:57,925 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> u think i walk throught doors'
+2026-04-17 21:35:06,621 INFO discord.player ffmpeg process 65234 successfully terminated with return code of 0.
+2026-04-17 21:35:23,725 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> i walk on red carpet' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:35:23,726 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> i walk on red carpet'
+2026-04-17 21:35:32,465 INFO discord.player ffmpeg process 65478 successfully terminated with return code of 0.
+2026-04-17 21:35:42,735 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='@do you have a face' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:35:42,735 INFO __main__ Prompt trigger matched author=shailu039 prompt='@do you have a face'
+2026-04-17 21:35:48,642 INFO discord.player ffmpeg process 65655 successfully terminated with return code of 0.
+2026-04-17 21:36:09,350 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> then shut it and leave im hungry' mentions=[] role_mentions=[]
+2026-04-17 21:36:29,923 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> then shut it and leave im hungry' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:36:29,924 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> then shut it and leave im hungry'
+2026-04-17 21:36:42,234 INFO discord.player ffmpeg process 66048 successfully terminated with return code of 0.
+2026-04-17 21:37:00,828 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> i am gonna enjoy a massive dinner. unlike you' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:37:00,828 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> i am gonna enjoy a massive dinner. unlike you'
+2026-04-17 21:37:11,543 INFO discord.player ffmpeg process 66326 successfully terminated with return code of 0.
+2026-04-17 21:37:37,217 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='<@&1488565371282788525> whats so fun with a intlletual if u cant even eat' mentions=[1488558417164636341] role_mentions=[]
+2026-04-17 21:37:37,217 INFO __main__ Prompt trigger matched author=shailu039 prompt='<@&1488565371282788525> whats so with a intlletual if u cant even eat'
+2026-04-17 21:37:53,804 INFO discord.player ffmpeg process 66669 successfully terminated with return code of 0.
+2026-04-17 21:37:57,745 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='leave' mentions=[] role_mentions=[]
+2026-04-17 21:38:02,570 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='pasikudhu' mentions=[] role_mentions=[]
+2026-04-17 21:38:14,112 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='how' mentions=[] role_mentions=[]
+2026-04-17 21:38:15,789 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='broo' mentions=[] role_mentions=[]
+2026-04-17 21:38:29,851 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='!leave' mentions=[] role_mentions=[]
+2026-04-17 21:38:29,851 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1350324320672546826 (Guild ID 1350324319942868992)
+2026-04-17 21:38:36,548 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='good job' mentions=[] role_mentions=[]
+2026-04-17 21:38:41,782 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='na sapda pore' mentions=[] role_mentions=[]
+2026-04-17 21:38:44,077 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=shailu039 content='tata' mentions=[] role_mentions=[]
+2026-04-17 21:39:23,364 INFO __main__ Message received guild=1350324319942868992 channel=Lounge author=lethinkj content='byee' mentions=[] role_mentions=[]
+2026-04-17 22:19:06,756 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=anitus_a content='<@1174295899745296438>' mentions=[1174295899745296438] role_mentions=[]
+2026-04-17 22:23:52,648 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='' mentions=[] role_mentions=[]
+2026-04-20 22:17:22,690 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-20 22:17:22,690 INFO discord.client logging in using static token
+2026-04-20 22:17:24,888 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 6a7aa8fe0bf4ab59fa5c853e71174f41).
+2026-04-20 22:17:26,912 INFO __main__ Bot ready as fun#8263
+2026-04-20 22:17:29,996 INFO __main__ Local piper voice preloaded
+2026-04-20 22:20:21,568 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-20 22:20:21,569 INFO discord.client logging in using static token
+2026-04-20 22:20:23,488 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 4e4f653edff829116f421081061e3c42).
+2026-04-20 22:20:25,495 INFO __main__ Bot ready as fun#8263
+2026-04-20 22:20:28,840 INFO __main__ Local piper voice preloaded
+2026-04-20 22:20:32,254 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-20 22:20:32,255 INFO discord.voice_state Connecting to voice...
+2026-04-20 22:20:32,255 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-20 22:20:32,948 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom03-b84f1e21.discord.media:2096
+2026-04-20 22:20:33,339 INFO discord.voice_state Voice connection complete.
+2026-04-20 22:23:49,396 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=bennyhinn18 content='<@1488558417164636341> hloo' mentions=[1488558417164636341] role_mentions=[]
+2026-04-20 22:23:49,397 INFO __main__ Prompt trigger matched author=bennyhinn18 prompt='hloo'
+2026-04-20 22:23:57,255 INFO discord.player ffmpeg process 118033 successfully terminated with return code of 0.
+2026-04-20 22:24:22,525 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=bennyhinn18 content='Then how you say hello' mentions=[1488558417164636341] role_mentions=[]
+2026-04-20 22:24:22,525 INFO __main__ Prompt trigger matched author=bennyhinn18 prompt='Then how you say hello'
+2026-04-20 22:24:33,500 INFO discord.player ffmpeg process 119053 successfully terminated with return code of 0.
+2026-04-20 22:24:59,714 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=bennyhinn18 content="I didn't mentioned ita a rocket science" mentions=[1488558417164636341] role_mentions=[]
+2026-04-20 22:24:59,714 INFO __main__ Prompt trigger matched author=bennyhinn18 prompt="I didn't mentioned ita a rocket science"
+2026-04-20 22:25:08,056 INFO discord.player ffmpeg process 120005 successfully terminated with return code of 0.
+2026-04-20 22:25:33,726 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=bennyhinn18 content='Dont you know we genz chat like that..' mentions=[1488558417164636341] role_mentions=[]
+2026-04-20 22:25:33,727 INFO __main__ Prompt trigger matched author=bennyhinn18 prompt='Dont you know we genz chat like that..'
+2026-04-20 22:25:44,186 INFO discord.player ffmpeg process 120974 successfully terminated with return code of 0.
+2026-04-20 22:25:49,531 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=alisha_1810 content='A warrior continues to stand guard at an ancient gate, even when no one remains to watch him or praise his duty. What quality keeps him there?' mentions=[] role_mentions=[]
+2026-04-20 22:26:20,772 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=bennyhinn18 content='<@&1488565371282788525> A warrior continues to stand guard at an ancient gate, even when no one remains to watch him or praise his duty. What quality keeps him there?' mentions=[] role_mentions=['fun']
+2026-04-20 22:26:20,774 INFO __main__ Prompt trigger matched author=bennyhinn18 prompt='A warrior continues to stand guard at an ancient gate, even when no one remains to watch him or praise his duty. What quality keeps him there?'
+2026-04-20 22:26:26,928 INFO discord.player ffmpeg process 121907 successfully terminated with return code of 0.
+2026-04-20 22:27:40,986 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=alisha_1810 content='<@1488558417164636341>  the answer is dedication not duty' mentions=[1488558417164636341] role_mentions=[]
+2026-04-20 22:27:40,986 INFO __main__ Prompt trigger matched author=alisha_1810 prompt='the answer is dedication not duty'
+2026-04-20 22:27:53,526 INFO discord.player ffmpeg process 123424 successfully terminated with return code of 0.
+2026-04-20 22:36:34,492 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-20 22:36:34,492 INFO discord.client logging in using static token
+2026-04-20 22:36:36,564 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 5d301e197e7e4cd23d0c741643e4f04a).
+2026-04-20 22:36:38,572 INFO __main__ Bot ready as fun#8263
+2026-04-20 22:36:41,892 INFO __main__ Local piper voice preloaded
+2026-04-20 22:36:41,892 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='hi' mentions=[1488558417164636341] role_mentions=[]
+2026-04-20 22:36:41,893 INFO __main__ Prompt trigger matched author=lethinkj prompt='hi'
+2026-04-20 22:36:49,060 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-20 22:36:49,062 INFO discord.voice_state Connecting to voice...
+2026-04-20 22:36:49,062 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-20 22:36:50,203 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom03-b84f1e21.discord.media:2096
+2026-04-20 22:36:50,543 INFO discord.voice_state Voice connection complete.
+2026-04-20 22:36:54,963 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='hi' mentions=[1488558417164636341] role_mentions=[]
+2026-04-20 22:36:54,964 INFO __main__ Prompt trigger matched author=lethinkj prompt='hi'
+2026-04-20 22:36:57,980 INFO discord.player ffmpeg process 135503 successfully terminated with return code of 0.
+2026-04-22 21:23:40,780 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-22 21:23:40,781 INFO discord.client logging in using static token
+2026-04-22 21:23:42,698 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: a29a6ac71dd81c1ff94d119a6b9dd7bb).
+2026-04-22 21:23:44,711 INFO __main__ Bot ready as fun#8263
+2026-04-22 21:23:45,770 INFO __main__ Local piper voice preloaded
+2026-04-22 21:29:08,478 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=jagadeesh09337 content='No kekala' mentions=[] role_mentions=[]
+2026-04-22 21:29:13,614 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=zenitzu_08 content='Kekuthu' mentions=[] role_mentions=[]
+2026-04-22 21:33:22,948 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=lethinkj content='https://tenor.com/view/thumbs-up-double-thumbs-up-like-agreed-yup-gif-14284264219182206721' mentions=[] role_mentions=[]
+2026-04-22 21:33:28,575 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=jagadeesh09337 content='Ok bro' mentions=[] role_mentions=[]
+2026-04-22 21:33:51,069 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=lethinkj content='1st guy <@1337604789378482228>' mentions=[1337604789378482228] role_mentions=[]
+2026-04-22 21:34:06,065 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=jagadeesh09337 content='Bye bro' mentions=[] role_mentions=[]
+2026-04-22 21:35:28,793 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=arthi_123 content='<@1174295899745296438> oh no no no..' mentions=[1174295899745296438] role_mentions=[]
+2026-04-22 21:37:53,156 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=aswin01485 content="I'm leavihg bro" mentions=[] role_mentions=[]
+2026-04-22 21:39:28,805 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=zenitzu_08 content='10 min la vara' mentions=[] role_mentions=[]
+2026-04-22 21:39:55,067 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=anitus_a content='okie' mentions=[] role_mentions=[]
+2026-04-22 21:40:14,842 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=gobika18 content='Nanum porein' mentions=[] role_mentions=[]
+2026-04-22 21:40:21,123 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=anitus_a content='byee' mentions=[] role_mentions=[]
+2026-04-22 21:42:05,856 INFO __main__ Message received guild=1350324319942868992 channel=schedule-meet author=lethinkj content='<@1337604789378482228>' mentions=[1337604789378482228] role_mentions=[]
+2026-04-22 21:42:17,073 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-22 21:42:17,077 INFO discord.voice_state Connecting to voice...
+2026-04-22 21:42:17,077 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-22 21:42:17,635 INFO discord.voice_state Voice handshake complete. Endpoint found: india11003.discord.media:443
+2026-04-22 21:42:18,120 INFO discord.voice_state Voice connection complete.
+2026-04-22 21:42:40,208 INFO __main__ Message received guild=1350324319942868992 channel=schedule-meet author=lethinkj content='cancel' mentions=[] role_mentions=[]
+2026-04-22 21:53:39,100 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=arthi_123 content='@all me leaving...tata bye bye....' mentions=[] role_mentions=[]
+2026-04-22 21:54:09,817 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=lethinkj content='<@1337604789378482228>  progress' mentions=[1337604789378482228] role_mentions=[]
+2026-04-22 21:54:26,428 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=arthi_123 content='wait and see brooo....' mentions=[] role_mentions=[]
+2026-04-22 21:54:44,954 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=lethinkj content='https://tenor.com/view/thumbs-up-double-thumbs-up-like-agreed-yup-gif-14284264219182206721' mentions=[] role_mentions=[]
+2026-04-22 22:05:18,708 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=anitus_a content='<@1488558417164636341> hello' mentions=[1488558417164636341] role_mentions=[]
+2026-04-22 22:05:18,708 INFO __main__ Prompt trigger matched author=anitus_a prompt='hello'
+2026-04-22 22:05:21,762 INFO discord.player ffmpeg process 373934 successfully terminated with return code of 0.
+2026-04-22 22:05:40,065 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=anitus_a content='<@&1488565371282788525> how are you' mentions=[] role_mentions=['fun']
+2026-04-22 22:05:40,065 INFO __main__ Prompt trigger matched author=anitus_a prompt='how are you'
+2026-04-22 22:05:43,863 INFO discord.player ffmpeg process 374422 successfully terminated with return code of 0.
+2026-04-22 22:06:11,407 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=anitus_a content='Say hi to aswathi' mentions=[1488558417164636341] role_mentions=[]
+2026-04-22 22:06:11,408 INFO __main__ Prompt trigger matched author=anitus_a prompt='Say hi to aswathi'
+2026-04-22 22:06:14,034 INFO discord.player ffmpeg process 375249 successfully terminated with return code of 0.
+2026-04-22 22:06:40,637 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=bennyhinn18 content='<@&1488565371282788525> what is quantam computing' mentions=[] role_mentions=['fun']
+2026-04-22 22:06:40,637 INFO __main__ Prompt trigger matched author=bennyhinn18 prompt='what is quantam computing'
+2026-04-22 22:07:06,381 INFO discord.player ffmpeg process 375777 successfully terminated with return code of 0.
+2026-04-22 22:07:11,278 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=lethinkj content='<@&1488565371282788525> yaru nee' mentions=[] role_mentions=['fun']
+2026-04-22 22:07:11,278 INFO __main__ Prompt trigger matched author=lethinkj prompt='yaru nee'
+2026-04-22 22:07:17,496 INFO discord.player ffmpeg process 376212 successfully terminated with return code of 0.
+2026-04-22 22:08:08,157 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=bennyhinn18 content='<@1438185938843996270>  hii' mentions=[1438185938843996270] role_mentions=[]
+2026-04-22 22:13:11,504 ERROR discord.voice_state Disconnected from voice... Reconnecting in 0.33s.
+Traceback (most recent call last):
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/voice_state.py", line 671, in _poll_voice_ws
+    await self.ws.poll_event()
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/gateway.py", line 1164, in poll_event
+    raise ConnectionClosed(self.ws, shard_id=None, code=self._close_code)
+discord.errors.ConnectionClosed: Shard ID None WebSocket closed with 1006
+2026-04-22 22:13:11,840 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1350324320672546828 (Guild ID 1350324319942868992)
+2026-04-22 22:13:11,840 INFO discord.voice_state Connecting to voice...
+2026-04-22 22:13:11,840 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-22 22:13:13,267 INFO discord.voice_state Voice handshake complete. Endpoint found: india11003.discord.media:443
+2026-04-22 22:13:13,785 INFO discord.voice_state Voice connection complete.
+2026-04-22 22:18:20,248 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=lethinkj content='http://localhost:3000/api/users/lethinkj/solved' mentions=[] role_mentions=[]
+2026-04-22 22:18:28,397 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=lethinkj content='{"username":"lethinkj","requestedUsername":"lethinkj","source":"live","totalSolved":69,"fetchedAt":"2026-04-22T16:47:56.607Z"}' mentions=[] role_mentions=[]
+2026-04-22 22:19:09,535 INFO __main__ Message received guild=1350324319942868992 channel=Meeting Room 1 author=anitus_a content='https://prod.liveshare.vsengsaas.visualstudio.com/join?788D18FA0B5A5E71B1A22ECD526238570907' mentions=[] role_mentions=[]
+2026-04-22 22:24:58,086 INFO discord.voice_state Disconnected from voice by discord, close code 4014.
+2026-04-22 22:24:58,087 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1350324320672546828 (Guild ID 1350324319942868992)
+2026-04-22 22:54:20,579 INFO discord.gateway Shard ID None has successfully RESUMED session a29a6ac71dd81c1ff94d119a6b9dd7bb.
+2026-04-22 23:04:16,941 ERROR discord.client Attempting a reconnect in 0.65s
+Traceback (most recent call last):
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1574, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1190, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1221, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 936, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.14/socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/client.py", line 728, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/gateway.py", line 392, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/http.py", line 571, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/client.py", line 1087, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [Temporary failure in name resolution]
+2026-04-22 23:04:17,620 ERROR discord.client Attempting a reconnect in 1.91s
+Traceback (most recent call last):
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1574, in _create_direct_connection
+    hosts = await self._resolve_host(host, port, traces=traces)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1190, in _resolve_host
+    return await asyncio.shield(resolved_host_task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1221, in _resolve_host_with_throttle
+    addrs = await self._resolver.resolve(host, port, family=self._family)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/resolver.py", line 40, in resolve
+    infos = await self._loop.getaddrinfo(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<5 lines>...
+    )
+    ^
+  File "/usr/lib/python3.14/asyncio/base_events.py", line 936, in getaddrinfo
+    return await self.run_in_executor(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        None, getaddr_func, host, port, family, type, proto, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 86, in run
+    result = ctx.run(self.task)
+  File "/usr/lib/python3.14/concurrent/futures/thread.py", line 73, in run
+    return fn(*args, **kwargs)
+  File "/usr/lib/python3.14/socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/client.py", line 728, in connect
+    self.ws = await asyncio.wait_for(coro, timeout=60.0)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.14/asyncio/tasks.py", line 488, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/gateway.py", line 392, in from_client
+    socket = await client.http.ws_connect(str(url))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/discord/http.py", line 571, in ws_connect
+    return await self.__session.ws_connect(url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/client.py", line 1087, in _ws_connect
+    resp = await self.request(
+           ^^^^^^^^^^^^^^^^^^^
+    ...<11 lines>...
+    )
+    ^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/client.py", line 788, in _request
+    resp = await handler(req)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/client.py", line 742, in _connect_and_send_request
+    conn = await self._connector.connect(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        req, traces=traces, timeout=real_timeout
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/connector.py", line 672, in connect
+    proto = await self._create_connection(req, traces, timeout)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1251, in _create_connection
+    _, proto = await self._create_direct_connection(req, traces, timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lethin/projects/backup/bot-voice/venv/lib/python3.14/site-packages/aiohttp/connector.py", line 1580, in _create_direct_connection
+    raise ClientConnectorDNSError(req.connection_key, exc) from exc
+aiohttp.client_exceptions.ClientConnectorDNSError: Cannot connect to host gateway-us-east1-d.discord.gg:443 ssl:default [Temporary failure in name resolution]
+2026-04-22 23:04:22,928 INFO discord.gateway Shard ID None has successfully RESUMED session a29a6ac71dd81c1ff94d119a6b9dd7bb.
+2026-04-22 23:08:14,003 INFO discord.gateway Shard ID None has successfully RESUMED session a29a6ac71dd81c1ff94d119a6b9dd7bb.
+2026-04-24 21:40:46,121 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-24 21:40:46,121 INFO discord.client logging in using static token
+2026-04-24 21:40:48,173 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: b5b6bcfb6fb7d714961818c8a7dea0ed).
+2026-04-24 21:40:50,179 INFO __main__ Bot ready as fun#8263
+2026-04-24 21:40:51,393 INFO __main__ Local piper voice preloaded
+2026-04-24 21:40:57,892 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='<@&1488565371282788525> hii' mentions=[] role_mentions=['fun']
+2026-04-24 21:40:57,892 INFO __main__ Prompt trigger matched author=lethinkj prompt='hii'
+2026-04-24 21:41:02,139 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-24 21:41:02,140 INFO discord.voice_state Connecting to voice...
+2026-04-24 21:41:02,140 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-24 21:41:03,154 INFO discord.voice_state Voice handshake complete. Endpoint found: c-sin07-094f6a83.discord.media:2053
+2026-04-24 21:41:03,650 INFO discord.voice_state Voice connection complete.
+2026-04-24 21:41:20,448 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-24 21:41:20,448 INFO discord.client logging in using static token
+2026-04-24 21:41:22,765 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 80e8c0e8bead547f1b50d9ddb3efd9b3).
+2026-04-24 21:41:24,295 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-24 21:41:24,295 INFO discord.voice_state Connecting to voice...
+2026-04-24 21:41:24,296 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-24 21:41:24,771 INFO __main__ Bot ready as fun#8263
+2026-04-24 21:41:25,796 INFO __main__ Local piper voice preloaded
+2026-04-24 21:41:25,796 INFO discord.voice_state Voice handshake complete. Endpoint found: c-sin07-094f6a83.discord.media:2053
+2026-04-24 21:41:26,268 INFO discord.voice_state Voice connection complete.
+2026-04-24 21:41:50,776 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='Hii' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:41:50,776 INFO __main__ Prompt trigger matched author=lethinkj prompt='Hii'
+2026-04-24 21:41:56,636 INFO discord.player ffmpeg process 76820 successfully terminated with return code of 0.
+2026-04-24 21:42:10,997 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='Yaru nee' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:42:10,997 INFO __main__ Prompt trigger matched author=lethinkj prompt='Yaru nee'
+2026-04-24 21:42:17,642 INFO discord.player ffmpeg process 76993 successfully terminated with return code of 0.
+2026-04-24 21:42:42,006 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='Sethru' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:42:42,006 INFO __main__ Prompt trigger matched author=lethinkj prompt='Sethru'
+2026-04-24 21:42:55,118 INFO discord.player ffmpeg process 77293 successfully terminated with return code of 0.
+2026-04-24 21:43:27,485 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Sethru u die di' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:43:27,485 INFO __main__ Prompt trigger matched author=shaniya2710 prompt='Sethru u die di'
+2026-04-24 21:43:40,863 INFO discord.player ffmpeg process 77622 successfully terminated with return code of 0.
+2026-04-24 21:43:46,008 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Podi' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:43:46,008 INFO __main__ Prompt trigger matched author=shaniya2710 prompt='Podi'
+2026-04-24 21:43:57,579 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='U r ugly' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:43:57,579 INFO __main__ Prompt trigger matched author=shaniya2710 prompt='U r ugly'
+2026-04-24 21:43:57,997 INFO discord.player ffmpeg process 77838 successfully terminated with return code of 0.
+2026-04-24 21:44:10,660 INFO discord.player ffmpeg process 77974 successfully terminated with return code of 0.
+2026-04-24 21:44:19,400 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Ur voice is ugly' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:44:19,400 INFO __main__ Prompt trigger matched author=shaniya2710 prompt='Ur voice is ugly'
+2026-04-24 21:44:31,487 INFO discord.player ffmpeg process 78152 successfully terminated with return code of 0.
+2026-04-24 21:44:53,583 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='First Can u understand what u r saying' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:44:53,583 INFO __main__ Prompt trigger matched author=shaniya2710 prompt='First Can u understand what u r saying'
+2026-04-24 21:45:08,355 INFO discord.player ffmpeg process 78466 successfully terminated with return code of 0.
+2026-04-24 21:45:12,855 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Athu therium moodu' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:45:12,855 INFO __main__ Prompt trigger matched author=shaniya2710 prompt='Athu therium moodu'
+2026-04-24 21:45:22,574 INFO discord.player ffmpeg process 78635 successfully terminated with return code of 0.
+2026-04-24 21:45:40,484 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Fun you are so fun' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:45:40,484 INFO __main__ Prompt trigger matched author=shaniya2710 prompt='you are so'
+2026-04-24 21:45:52,791 INFO discord.player ffmpeg process 78914 successfully terminated with return code of 0.
+2026-04-24 21:46:04,708 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-04-24 21:46:04,708 INFO discord.client logging in using static token
+2026-04-24 21:46:06,886 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: b947804a0cb1a6b8ec6e9cecbf73c1ba).
+2026-04-24 21:46:08,891 INFO __main__ Bot ready as fun#8263
+2026-04-24 21:46:09,914 INFO __main__ Local piper voice preloaded
+2026-04-24 21:46:16,499 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-24 21:46:16,500 INFO discord.voice_state Connecting to voice...
+2026-04-24 21:46:16,500 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-04-24 21:46:17,151 INFO discord.voice_state Voice handshake complete. Endpoint found: c-sin07-094f6a83.discord.media:2053
+2026-04-24 21:46:17,722 INFO discord.voice_state Voice connection complete.
+2026-04-24 21:46:32,488 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=shaniya2710 content='Hey are.you fun <@&1488565371282788525>' mentions=[] role_mentions=['fun']
+2026-04-24 21:46:32,488 INFO __main__ Prompt trigger matched author=shaniya2710 prompt='Hey are.you fun'
+2026-04-24 21:46:46,195 INFO discord.player ffmpeg process 79545 successfully terminated with return code of 0.
+2026-04-24 21:47:08,620 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='Oru katha sollu kaka katha' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:47:08,620 INFO __main__ Prompt trigger matched author=lethinkj prompt='Oru katha sollu kaka katha'
+2026-04-24 21:47:35,604 INFO discord.player ffmpeg process 79851 successfully terminated with return code of 0.
+2026-04-24 21:47:37,771 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content="It's not funny" mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:47:37,771 INFO __main__ Prompt trigger matched author=lethinkj prompt="It's not funny"
+2026-04-24 21:47:45,221 INFO discord.player ffmpeg process 80079 successfully terminated with return code of 0.
+2026-04-24 21:47:53,788 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='Funny stories' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:47:53,788 INFO __main__ Prompt trigger matched author=lethinkj prompt='Funny stories'
+2026-04-24 21:48:03,904 INFO discord.player ffmpeg process 80270 successfully terminated with return code of 0.
+2026-04-24 21:48:21,462 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content="It's not story fun i need a fun story" mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:48:21,462 INFO __main__ Prompt trigger matched author=lethinkj prompt="It's not story i need a story"
+2026-04-24 21:48:33,628 INFO discord.player ffmpeg process 80530 successfully terminated with return code of 0.
+2026-04-24 21:48:36,941 INFO __main__ Message received guild=1350324319942868992 channel=🕹️Chill zone author=lethinkj content='I need a funny story' mentions=[1488558417164636341] role_mentions=[]
+2026-04-24 21:48:36,941 INFO __main__ Prompt trigger matched author=lethinkj prompt='I need a funny story'
+2026-04-24 21:48:54,384 INFO discord.player ffmpeg process 80754 successfully terminated with return code of 0.
+2026-04-24 22:13:25,209 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='<@1309201554787664026> have you changed event name' mentions=[1309201554787664026] role_mentions=[]
+2026-04-24 22:13:40,644 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=anitus_a content='Which event ?' mentions=[] role_mentions=[]
+2026-04-24 22:13:44,740 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='CG to db' mentions=[] role_mentions=[]
+2026-04-24 22:13:53,992 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=anitus_a content='No me no' mentions=[] role_mentions=[]
+2026-04-24 22:13:56,991 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=anitus_a content='Not' mentions=[] role_mentions=[]
+2026-04-24 22:14:01,260 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='Oo' mentions=[] role_mentions=[]
+2026-04-24 22:14:06,044 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=anitus_a content='Pananuma ?' mentions=[] role_mentions=[]
+2026-04-24 22:14:10,868 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='End that event' mentions=[] role_mentions=[]
+2026-04-24 22:14:14,286 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='Manually' mentions=[] role_mentions=[]
+2026-04-24 22:14:19,728 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content="I don't have acess" mentions=[] role_mentions=[]
+2026-04-24 22:15:01,448 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=anitus_a content='Okay' mentions=[] role_mentions=[]
+2026-04-24 22:15:04,606 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=anitus_a content='Ended 🤣' mentions=[] role_mentions=[]
+2026-04-24 22:15:04,957 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='Noo' mentions=[] role_mentions=[]
+2026-04-24 22:15:11,676 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='Some one created' mentions=[] role_mentions=[]
+2026-04-24 22:15:25,815 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='Event using schedule meet' mentions=[] role_mentions=[]
+2026-04-24 22:15:38,360 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content="I'm going to check log" mentions=[] role_mentions=[]
+2026-04-24 22:19:20,940 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=anitus_a content='Okay' mentions=[] role_mentions=[]
+2026-04-24 22:19:58,310 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='' mentions=[] role_mentions=[]
+2026-04-24 22:20:03,276 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='found the guy' mentions=[] role_mentions=[]
+2026-04-24 22:22:45,317 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=anitus_a content='Avlo dha' mentions=[] role_mentions=[]
+2026-04-24 22:30:52,184 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=anitus_a content='Hello <@1181238306671968256>' mentions=[1181238306671968256] role_mentions=[]
+2026-04-24 22:31:16,958 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-04-24 22:31:17,332 INFO discord.voice_state Disconnected from voice by force... potentially reconnecting.
+2026-04-24 22:31:37,918 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=anitus_a content="Don't disturb them <@1174295899745296438>" mentions=[1174295899745296438] role_mentions=[]
+2026-04-24 22:31:46,197 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='Yesss' mentions=[] role_mentions=[]
+2026-04-24 22:31:51,873 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='I wont' mentions=[] role_mentions=[]
+2026-04-24 22:32:03,916 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='Called it for count' mentions=[] role_mentions=[]
+2026-04-24 22:33:29,224 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=anitus_a content='Kk' mentions=[] role_mentions=[]
+2026-04-24 22:45:24,855 INFO __main__ Message received guild=1350324319942868992 channel=general author=michalnithesh content='' mentions=[] role_mentions=[]
+2026-04-24 22:45:59,208 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='<@1167152655890645107> hii 👋' mentions=[1167152655890645107] role_mentions=[]
+2026-04-24 22:46:57,778 INFO __main__ Message received guild=1350324319942868992 channel=general author=lethinkj content='' mentions=[1167152655890645107] role_mentions=[]
+2026-04-24 22:48:02,552 INFO __main__ Message received guild=1350324319942868992 channel=general author=godwin_sm content='' mentions=[] role_mentions=[]
+2026-04-24 22:57:16,772 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=bennyhinn18 content='https://onecompiler.com/react' mentions=[] role_mentions=[]
+2026-04-24 23:03:27,785 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=bennyhinn18 content='function Counter() {\n  let count = 0;\n\n  function handleClick() {\n    count++;\n    console.log(count);\n  }\n\n  return (\n    <button onClick={handleClick}>\n      {count}\n    </button>\n  );\n}\n\nwithout hook' mentions=[] role_mentions=[]
+2026-04-24 23:03:44,451 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=bennyhinn18 content='with hook\n import { useState } from "react";\n\nfunction Counter() {\n  const [count, setCount] = useState(0);\n\n  function handleClick() {\n    setCount(count + 1);\n  }\n\n  return (\n    <button onClick={handleClick}>\n      {count}\n    </button>\n  );\n}' mentions=[] role_mentions=[]
+2026-04-24 23:04:10,830 INFO __main__ Message received guild=1350324319942868992 channel=Guest author=lethinkj content='Gud night guys 😴' mentions=[] role_mentions=[]
+2026-06-12 21:36:40,058 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-06-12 21:36:40,058 INFO discord.client logging in using static token
+2026-06-12 21:36:42,787 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: f4f63795496a93d497c119a495a61c4a).
+2026-06-12 21:36:44,793 INFO __main__ Bot ready as fun#8263
+2026-06-12 21:36:45,740 INFO __main__ Local piper voice preloaded
+2026-06-12 21:36:54,914 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-06-12 21:36:54,915 INFO discord.voice_state Connecting to voice...
+2026-06-12 21:36:54,915 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-06-12 21:36:56,259 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom12-023cbed8.discord.media:8443
+2026-06-12 21:36:57,604 INFO discord.voice_state Voice connection complete.
+2026-06-12 21:37:08,555 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=lethinkj content='Hi' mentions=[1488558417164636341] role_mentions=[]
+2026-06-12 21:37:08,555 INFO __main__ Prompt trigger matched author=lethinkj prompt='Hi'
+2026-06-12 21:37:14,431 INFO discord.player ffmpeg process 139874 successfully terminated with return code of 0.
+2026-06-12 21:38:08,876 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=anitus_a content='Saavu da nee' mentions=[1488558417164636341] role_mentions=[]
+2026-06-12 21:38:08,876 INFO __main__ Prompt trigger matched author=anitus_a prompt='Saavu da nee'
+2026-06-12 21:38:24,284 INFO discord.player ffmpeg process 141177 successfully terminated with return code of 0.
+2026-06-12 21:38:30,688 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=anitus_a content='Say your name' mentions=[1488558417164636341] role_mentions=[]
+2026-06-12 21:38:30,689 INFO __main__ Prompt trigger matched author=anitus_a prompt='Say your name'
+2026-06-12 21:38:36,182 INFO discord.player ffmpeg process 141669 successfully terminated with return code of 0.
+2026-06-12 21:38:47,482 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=anitus_a content='Apo fun na yaru' mentions=[1488558417164636341] role_mentions=[]
+2026-06-12 21:38:47,482 INFO __main__ Prompt trigger matched author=anitus_a prompt='Apo na yaru'
+2026-06-12 21:38:53,078 INFO discord.player ffmpeg process 142034 successfully terminated with return code of 0.
+2026-06-12 21:39:04,636 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=anitus_a content='Onaka name fun illaiya' mentions=[] role_mentions=[]
+2026-06-12 21:39:04,636 INFO __main__ Prompt trigger matched author=anitus_a prompt='Onaka name illaiya'
+2026-06-12 21:39:13,540 INFO discord.player ffmpeg process 142429 successfully terminated with return code of 0.
+2026-06-12 21:39:24,239 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=anitus_a content='Aana un name fun nu enaku show aaguthu' mentions=[] role_mentions=[]
+2026-06-12 21:39:24,239 INFO __main__ Prompt trigger matched author=anitus_a prompt='Aana un name nu enaku show aaguthu'
+2026-06-12 21:39:45,645 INFO discord.player ffmpeg process 143220 successfully terminated with return code of 0.
+2026-06-12 21:39:47,898 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=anitus_a content='Aana un name fun nu enaku show aaguthu <@1488558417164636341>' mentions=[1488558417164636341] role_mentions=[]
+2026-06-12 21:39:47,898 INFO __main__ Prompt trigger matched author=anitus_a prompt='Aana un name nu enaku show aaguthu'
+2026-06-12 21:39:56,616 INFO discord.player ffmpeg process 143403 successfully terminated with return code of 0.
+2026-06-12 21:40:04,010 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=anitus_a content='Apo fun illaiya ??' mentions=[] role_mentions=[]
+2026-06-12 21:40:04,010 INFO __main__ Prompt trigger matched author=anitus_a prompt='Apo illaiya ??'
+2026-06-12 21:40:10,603 INFO discord.player ffmpeg process 143792 successfully terminated with return code of 0.
+2026-06-12 21:40:19,907 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=lethinkj content='!leave' mentions=[] role_mentions=[]
+2026-06-12 21:40:19,907 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1500889072938254356 (Guild ID 1350324319942868992)
+2026-06-12 21:41:02,083 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-06-12 21:41:02,083 INFO discord.client logging in using static token
+2026-06-12 21:41:05,162 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 529a504f1f60ca7fdbf2d78d84b87b16).
+2026-06-12 21:41:07,236 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-06-12 21:41:07,236 INFO discord.voice_state Connecting to voice...
+2026-06-12 21:41:07,236 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-06-12 21:41:07,741 INFO __main__ Bot ready as BeeLert#5309
+2026-06-12 21:41:08,649 INFO __main__ Local piper voice preloaded
+2026-06-12 21:41:08,650 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom12-023cbed8.discord.media:8443
+2026-06-12 21:41:09,962 INFO discord.voice_state Voice connection complete.
+2026-06-12 21:41:21,950 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=anitus_a content='!mode angry' mentions=[] role_mentions=[]
+2026-06-12 21:41:35,457 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=anitus_a content='!mode normal' mentions=[] role_mentions=[]
+2026-06-12 21:41:49,095 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=anitus_a content='Ena da panura' mentions=[1438185938843996270] role_mentions=[]
+2026-06-12 21:41:49,095 INFO __main__ Prompt trigger matched author=anitus_a prompt='Ena da panura'
+2026-06-12 21:41:59,016 INFO discord.player ffmpeg process 146260 successfully terminated with return code of 0.
+2026-06-12 21:42:09,996 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=lethinkj content='!leave' mentions=[] role_mentions=[]
+2026-06-12 21:42:09,997 INFO discord.voice_state The voice handshake is being terminated for Channel ID 1500889072938254356 (Guild ID 1350324319942868992)
+2026-06-12 21:42:22,650 INFO __main__ Healthcheck server listening on 0.0.0.0:10000
+2026-06-12 21:42:22,650 INFO discord.client logging in using static token
+2026-06-12 21:42:25,097 INFO discord.gateway Shard ID None has connected to Gateway (Session ID: 92f235025f73c4e1403d6e9903b9b5ab).
+2026-06-12 21:42:27,102 INFO __main__ Bot ready as fun#8263
+2026-06-12 21:42:27,963 INFO __main__ Local piper voice preloaded
+2026-06-12 21:42:32,237 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=lethinkj content='!join' mentions=[] role_mentions=[]
+2026-06-12 21:42:32,238 INFO discord.voice_state Connecting to voice...
+2026-06-12 21:42:32,238 INFO discord.voice_state Starting voice handshake... (connection attempt 1)
+2026-06-12 21:42:32,917 INFO discord.voice_state Voice handshake complete. Endpoint found: c-bom12-023cbed8.discord.media:8443
+2026-06-12 21:42:34,330 INFO discord.voice_state Voice connection complete.
+2026-06-12 21:42:43,474 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=lethinkj content='!savage' mentions=[] role_mentions=[]
+2026-06-12 21:43:02,455 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=lethinkj content='!info' mentions=[] role_mentions=[]
+2026-06-12 21:43:15,756 INFO __main__ Message received guild=1350324319942868992 channel=Longue author=lethinkj content='What is networkconjection' mentions=[1488558417164636341] role_mentions=[]
+2026-06-12 21:43:15,756 INFO __main__ Prompt trigger matched author=lethinkj prompt='What is networkconjection'
+2026-06-12 21:43:29,301 INFO discord.player ffmpeg process 148200 successfully terminated with return code of 0.

@@ -138,9 +138,13 @@ class GuildSession:
     pending_lyrics_user_id: Optional[int] = None
     recent_language_by_user: dict[int, tuple[str, float]] = field(default_factory=dict)
     chat_history: list[dict[str, str]] = field(default_factory=list)
+    # Per-user chat histories keyed by user id
+    user_chat_history: dict[int, list[dict[str, str]]] = field(default_factory=dict)
+    # Per-user conversation mode (normal, funny, savage, info)
+    user_modes: dict[int, str] = field(default_factory=dict)
     listening_enabled: bool = False
     voice_sink: Any = None
-    voice_poll_task: Optional[asyncio.Task[Any]] = None
+    voice_poll_task: Optional[asyncio.Task[Any]] = field(default=None)
     live_audio_by_user: dict[int, dict[str, Any]] = field(default_factory=dict)
     live_audio_lock: threading.Lock = field(default_factory=threading.Lock)
 
@@ -213,8 +217,9 @@ TANGLISH_HINTS = {
 
 LANGUAGE_STICKY_SECONDS = float(os.getenv("LANGUAGE_STICKY_SECONDS", "300"))
 BRIEF_REPLY_MAX_TOKENS = int(os.getenv("BRIEF_REPLY_MAX_TOKENS", "220"))
-CHAT_HISTORY_MAX_TURNS = int(os.getenv("CHAT_HISTORY_MAX_TURNS", "6"))
+CHAT_HISTORY_MAX_TURNS = int(os.getenv("CHAT_HISTORY_MAX_TURNS", "12"))
 CHAT_HISTORY_MAX_CHARS_PER_MESSAGE = int(os.getenv("CHAT_HISTORY_MAX_CHARS_PER_MESSAGE", "220"))
+CHAT_MEMORY_KEEP_ALL = os.getenv("CHAT_MEMORY_KEEP_ALL", "true").strip().lower() in {"1", "true", "yes", "on"}
 PERSIST_CHAT_MEMORY = os.getenv("PERSIST_CHAT_MEMORY", "true").strip().lower() in {"1", "true", "yes", "on"}
 CHAT_MEMORY_FILE = Path(os.getenv("CHAT_MEMORY_FILE", "recordings/chat_memory.json"))
 FULL_SONGS_DIR = Path(os.getenv("FULL_SONGS_DIR", "recordings/fullsongs"))
@@ -572,7 +577,7 @@ def detect_prompt_language(prompt: str, session_state: Optional[GuildSession] = 
     return "en"
 
 
-def build_system_instruction(language_code: str) -> str:
+def build_system_instruction(language_code: str, conversation_mode: Optional[str] = None) -> str:
     base = (
         "You are a Discord voice assistant. Give clear, well-structured responses with good grammar. "
         "Keep default replies concise for fast speech, and provide more detail only when explicitly asked. "
@@ -581,6 +586,7 @@ def build_system_instruction(language_code: str) -> str:
         "Do not claim you are limited to Discord-server-only user data unless the user specifically asks for private Discord records you cannot access."
     )
     style = ""
+    # Base style from global config
     if AI_STYLE == "savage":
         style = (
             " Keep a playful savage tone: witty and confident, not aggressive. "
@@ -588,6 +594,25 @@ def build_system_instruction(language_code: str) -> str:
             "Avoid slurs, hate, threats, harassment, sexual content, or humiliating language. "
             "If the user seems upset or the topic is sensitive, switch to calm respectful style immediately."
         )
+
+    # Conversation-mode override (per-user)
+    if conversation_mode:
+        cm = conversation_mode.strip().lower()
+        if cm == "savage":
+            style = (
+                " Keep a playful savage tone: witty and confident, not aggressive. "
+                "Use light roasting sparingly, avoid slurs or harassment, and back off on sensitive topics."
+            )
+        elif cm == "funny":
+            style = (
+                " Keep a humorous, friendly tone: witty and light-hearted. "
+                "Prefer playful jokes and fun analogies without targeting or humiliating users."
+            )
+        elif cm == "info":
+            style = (
+                " Keep responses concise, factual, and neutral in tone. "
+                "Prioritize clarity and useful details over humor."
+            )
     if language_code == "ta":
         return f"{base}{style} Reply in natural Tamil using Tamil script."
     if language_code == "ta-latn":
@@ -598,7 +623,15 @@ def build_system_instruction(language_code: str) -> str:
     return f"{base}{style} Reply in English."
 
 
-def _load_chat_memory() -> dict[int, list[dict[str, str]]]:
+def _load_chat_memory() -> dict[int, Any]:
+    """Load persisted chat memory.
+
+    Returns a mapping of guild_id -> stored value. For backward compatibility the
+    stored value may be a simple list (legacy), or a dict with keys:
+      - chat_history: list
+      - user_chat_history: dict[str(user_id)] -> list
+      - user_modes: dict[str(user_id)] -> str
+    """
     if not PERSIST_CHAT_MEMORY or not CHAT_MEMORY_FILE.exists():
         return {}
 
@@ -608,27 +641,89 @@ def _load_chat_memory() -> dict[int, list[dict[str, str]]]:
         log.warning("Failed to load chat memory file: %s", CHAT_MEMORY_FILE)
         return {}
 
-    result: dict[int, list[dict[str, str]]] = {}
-    for guild_id, history in data.items():
+    result: dict[int, Any] = {}
+    if not isinstance(data, dict):
+        return {}
+
+    for guild_id, stored in data.items():
         try:
             gid = int(guild_id)
         except (TypeError, ValueError):
             continue
-        if not isinstance(history, list):
+
+        # Legacy format: list of turns
+        if isinstance(stored, list):
+            history_items = stored if CHAT_MEMORY_KEEP_ALL else stored[-max(1, CHAT_HISTORY_MAX_TURNS * 2):]
+            cleaned_history: list[dict[str, str]] = []
+            for turn in history_items:
+                if not isinstance(turn, dict):
+                    continue
+                user = str(turn.get("user", ""))
+                assistant = str(turn.get("assistant", ""))
+                speaker = str(turn.get("speaker", ""))
+                if user or assistant:
+                    cleaned_history.append({"speaker": speaker, "user": user, "assistant": assistant})
+            if cleaned_history:
+                result[gid] = {"chat_history": cleaned_history}
             continue
 
-        cleaned_history: list[dict[str, str]] = []
-        for turn in history[-max(1, CHAT_HISTORY_MAX_TURNS * 2):]:
-            if not isinstance(turn, dict):
-                continue
-            user = str(turn.get("user", ""))
-            assistant = str(turn.get("assistant", ""))
-            speaker = str(turn.get("speaker", ""))
-            if user or assistant:
-                cleaned_history.append({"speaker": speaker, "user": user, "assistant": assistant})
+        # New format: dict with structured fields
+        if isinstance(stored, dict):
+            entry: dict[str, Any] = {}
+            ch = stored.get("chat_history")
+            if isinstance(ch, list):
+                history_items = ch if CHAT_MEMORY_KEEP_ALL else ch[-max(1, CHAT_HISTORY_MAX_TURNS * 2):]
+                cleaned_history: list[dict[str, str]] = []
+                for turn in history_items:
+                    if not isinstance(turn, dict):
+                        continue
+                    user = str(turn.get("user", ""))
+                    assistant = str(turn.get("assistant", ""))
+                    speaker = str(turn.get("speaker", ""))
+                    if user or assistant:
+                        cleaned_history.append({"speaker": speaker, "user": user, "assistant": assistant})
+                if cleaned_history:
+                    entry["chat_history"] = cleaned_history
 
-        if cleaned_history:
-            result[gid] = cleaned_history
+            uhist = stored.get("user_chat_history")
+            if isinstance(uhist, dict):
+                cleaned_uh: dict[int, list[dict[str, str]]] = {}
+                for uid, turns in uhist.items():
+                    try:
+                        uid_i = int(uid)
+                    except (TypeError, ValueError):
+                        continue
+                    if not isinstance(turns, list):
+                        continue
+                    cleaned_turns: list[dict[str, str]] = []
+                    for turn in turns:
+                        if not isinstance(turn, dict):
+                            continue
+                        cleaned_turns.append({
+                            "speaker": str(turn.get("speaker", "")),
+                            "user": str(turn.get("user", "")),
+                            "assistant": str(turn.get("assistant", "")),
+                        })
+                    if cleaned_turns:
+                        cleaned_uh[uid_i] = cleaned_turns
+                if cleaned_uh:
+                    entry["user_chat_history"] = cleaned_uh
+
+            umodes = stored.get("user_modes")
+            if isinstance(umodes, dict):
+                cleaned_modes: dict[int, str] = {}
+                for uid, mode in umodes.items():
+                    try:
+                        uid_i = int(uid)
+                    except (TypeError, ValueError):
+                        continue
+                    if isinstance(mode, str) and mode:
+                        cleaned_modes[uid_i] = mode
+                if cleaned_modes:
+                    entry["user_modes"] = cleaned_modes
+
+            if entry:
+                result[gid] = entry
 
     return result
 
@@ -638,11 +733,38 @@ def _save_chat_memory() -> None:
         return
 
     CHAT_MEMORY_FILE.parent.mkdir(parents=True, exist_ok=True)
-    payload = {
-        str(guild_id): session_state.chat_history[-max(1, CHAT_HISTORY_MAX_TURNS * 2):]
-        for guild_id, session_state in sessions.items()
-        if session_state.chat_history
-    }
+    payload: dict[str, Any] = {}
+
+    # Load existing file to merge unknown guilds (preserve legacy lists/dicts)
+    existing: dict[str, Any] = {}
+    if CHAT_MEMORY_FILE.exists():
+        try:
+            loaded = json.loads(CHAT_MEMORY_FILE.read_text(encoding="utf-8"))
+            if isinstance(loaded, dict):
+                existing = loaded
+        except (OSError, json.JSONDecodeError):
+            log.warning("Failed to merge existing chat memory file: %s", CHAT_MEMORY_FILE)
+
+    # Start with existing payload
+    for guild_id, value in existing.items():
+        payload[str(guild_id)] = value
+
+    # Overwrite entries for currently loaded guild sessions with structured form
+    for guild_id, session_state in sessions.items():
+        entry: dict[str, Any] = {}
+        if session_state.chat_history:
+            entry["chat_history"] = session_state.chat_history if CHAT_MEMORY_KEEP_ALL else session_state.chat_history[-max(1, CHAT_HISTORY_MAX_TURNS * 2):]
+
+        if getattr(session_state, "user_chat_history", None):
+            # store keys as strings for JSON compatibility
+            entry["user_chat_history"] = {str(k): v for k, v in session_state.user_chat_history.items() if v}
+
+        if getattr(session_state, "user_modes", None):
+            entry["user_modes"] = {str(k): v for k, v in session_state.user_modes.items() if v}
+
+        if entry:
+            payload[str(guild_id)] = entry
+
     try:
         CHAT_MEMORY_FILE.write_text(
             json.dumps(payload, ensure_ascii=False, indent=2),
@@ -679,17 +801,29 @@ def get_recent_chat_context(session_state: GuildSession) -> str:
     return "\n".join(lines)
 
 
-def append_chat_history(session_state: GuildSession, speaker_name: str, user_text: str, assistant_text: str) -> None:
+def append_chat_history(
+    session_state: GuildSession,
+    speaker_name: str,
+    user_text: str,
+    assistant_text: str,
+    user_id: Optional[int] = None,
+) -> None:
     history = session_state.chat_history
-    history.append({
+    entry = {
         "speaker": speaker_name,
         "user": user_text,
         "assistant": assistant_text,
-    })
-    # Keep bounded memory to avoid growth over long uptime.
-    max_items = max(1, CHAT_HISTORY_MAX_TURNS * 2)
-    if len(history) > max_items:
-        del history[:-max_items]
+    }
+    history.append(entry)
+    # Also track per-user history when available
+    if user_id is not None:
+        per_user = session_state.user_chat_history.setdefault(user_id, [])
+        per_user.append(entry)
+    if not CHAT_MEMORY_KEEP_ALL:
+        # Optional bounded mode for deployments that need strict memory limits.
+        max_items = max(1, CHAT_HISTORY_MAX_TURNS * 2)
+        if len(history) > max_items:
+            del history[:-max_items]
     _save_chat_memory()
 
 
@@ -776,12 +910,13 @@ async def _process_live_utterance(
             user,
             language_code,
             conversation_context=context,
+            conversation_mode=(session_state.user_modes.get(user.id) if session_state and hasattr(session_state, 'user_modes') else None),
         )
     except Exception:
         log.exception("Live voice AI request failed transcript=%r", transcript)
         response = "I had a brief AI hiccup. Ask again and I will clap back properly."
 
-    append_chat_history(session_state, str(speaker_name), transcript, response)
+    append_chat_history(session_state, str(speaker_name), transcript, response, user_id=getattr(user, 'id', None))
 
     text_channel = guild.get_channel(session_state.text_channel_id)
     if LIVE_TEXT_FEEDBACK and isinstance(text_channel, discord.TextChannel):
@@ -856,6 +991,7 @@ async def generate_ai_reply(
     speaker: discord.Member,
     language_code: str,
     conversation_context: str = "",
+    conversation_mode: Optional[str] = None,
 ) -> str:
     if not AI_API_KEY or not AI_MODEL:
         raise RuntimeError("Set AI_API_KEY and AI_MODEL in .env")
@@ -897,7 +1033,7 @@ async def generate_ai_reply(
             "messages": [
                 {
                     "role": "system",
-                    "content": build_system_instruction(language_code),
+                    "content": build_system_instruction(language_code, conversation_mode=conversation_mode),
                 },
                 {
                     "role": "user",
@@ -1117,13 +1253,17 @@ async def handle_prompt(message: discord.Message, prompt: str) -> None:
             message.author,
             language_code,
             conversation_context=conversation_context,
+            conversation_mode=(session_state.user_modes.get(message.author.id) if session_state and hasattr(session_state, 'user_modes') else None),
         )
     except Exception as exc:
         log.exception("AI request failed for prompt: %r", prompt)
         response = "I hit a temporary AI connection issue. Please try again in a moment."
 
-    append_chat_history(session_state, message.author.display_name, prompt, response)
-
+    try:
+        append_chat_history(session_state, message.author.display_name, prompt, response, user_id=message.author.id)
+    except Exception:
+        # Fallback: ensure at least global history is saved
+        append_chat_history(session_state, message.author.display_name, prompt, response)
     # Always send a reply so the bot never appears unresponsive.
     await message.reply(response)
 
@@ -1217,6 +1357,21 @@ async def on_ready() -> None:
             log.info("Local ASR model preloaded")
         except Exception:
             log.exception("Failed to preload local ASR model")
+    # Send a brief guide message to known text channels about chat modes
+    guide = (
+        "Chat modes are available: normal, funny, savage, info. "
+        "Set your mode with `!mode <mode>` or use `!funny` / `!savage` / `!info` / `!normal`."
+    )
+    for gid, session_state in list(sessions.items()):
+        try:
+            guild = bot.get_guild(gid)
+            if not guild:
+                continue
+            channel = guild.get_channel(session_state.text_channel_id)
+            if isinstance(channel, discord.TextChannel):
+                await channel.send(guide)
+        except Exception:
+            log.exception("Failed to send startup guide to guild=%s", gid)
 
 
 @bot.event
@@ -1285,7 +1440,12 @@ async def join(ctx: commands.Context) -> None:
         session_state = GuildSession(text_channel_id=ctx.channel.id)
         loaded = _load_chat_memory().get(ctx.guild.id)
         if loaded:
-            session_state.chat_history = loaded
+            if isinstance(loaded, dict):
+                session_state.chat_history = loaded.get("chat_history", [])
+                session_state.user_chat_history = loaded.get("user_chat_history", {})
+                session_state.user_modes = loaded.get("user_modes", {})
+            elif isinstance(loaded, list):
+                session_state.chat_history = loaded
         sessions[ctx.guild.id] = session_state
     else:
         session_state.text_channel_id = ctx.channel.id
@@ -1319,12 +1479,21 @@ async def join(ctx: commands.Context) -> None:
                 session_state.voice_poll_task.cancel()
             session_state.voice_poll_task = asyncio.create_task(_live_voice_poll_loop(ctx.guild.id))
             await ctx.send(
-                f"Connected to {vc.channel.name}. Live listening is ON - speak and I will respond! Mention with {MENTION_TRIGGER} for text mode, or use !sing."
+                (
+                    f"Connected to {vc.channel.name}. Live listening is ON - speak and I will respond! "
+                    f"Mention with {MENTION_TRIGGER} for text mode, or use !sing.\n\n"
+                    "Chat modes: normal, funny, savage, info. Set your mode with `!mode <mode>` or use "
+                    "`!funny` / `!savage` / `!info` / `!normal`. Modes apply per-user and affect tone and style."
+                )
             )
             return
 
     await ctx.send(
-        f"Connected to {vc.channel.name}. Mention with {MENTION_TRIGGER} for AI replies, or use !sing / !sing <song name>. Use !listen on for voice chat."
+        (
+            f"Connected to {vc.channel.name}. Mention with {MENTION_TRIGGER} for AI replies, or use !sing / !sing <song name>. Use !listen on for voice chat.\n\n"
+            "Chat modes: normal, funny, savage, info. Set your mode with `!mode <mode>` or use "
+            "`!funny` / `!savage` / `!info` / `!normal`. Modes apply per-user and affect tone and style."
+        )
     )
 
 
@@ -1339,7 +1508,12 @@ async def sing(ctx: commands.Context, *, query: str = "") -> None:
         session_state = GuildSession(text_channel_id=ctx.channel.id)
         loaded = _load_chat_memory().get(ctx.guild.id)
         if loaded:
-            session_state.chat_history = loaded
+            if isinstance(loaded, dict):
+                session_state.chat_history = loaded.get("chat_history", [])
+                session_state.user_chat_history = loaded.get("user_chat_history", {})
+                session_state.user_modes = loaded.get("user_modes", {})
+            elif isinstance(loaded, list):
+                session_state.chat_history = loaded
         sessions[ctx.guild.id] = session_state
 
     if not query.strip():
@@ -1426,7 +1600,12 @@ async def preview(ctx: commands.Context, *, query: str = "") -> None:
         session_state = GuildSession(text_channel_id=ctx.channel.id)
         loaded = _load_chat_memory().get(ctx.guild.id)
         if loaded:
-            session_state.chat_history = loaded
+            if isinstance(loaded, dict):
+                session_state.chat_history = loaded.get("chat_history", [])
+                session_state.user_chat_history = loaded.get("user_chat_history", {})
+                session_state.user_modes = loaded.get("user_modes", {})
+            elif isinstance(loaded, list):
+                session_state.chat_history = loaded
         sessions[ctx.guild.id] = session_state
 
     await ctx.send(f"Searching preview for: {query}")
@@ -1450,7 +1629,12 @@ async def listen(ctx: commands.Context, mode: str = "on") -> None:
         session_state = GuildSession(text_channel_id=ctx.channel.id)
         loaded = _load_chat_memory().get(ctx.guild.id)
         if loaded:
-            session_state.chat_history = loaded
+            if isinstance(loaded, dict):
+                session_state.chat_history = loaded.get("chat_history", [])
+                session_state.user_chat_history = loaded.get("user_chat_history", {})
+                session_state.user_modes = loaded.get("user_modes", {})
+            elif isinstance(loaded, list):
+                session_state.chat_history = loaded
         sessions[ctx.guild.id] = session_state
 
     normalized = mode.strip().lower()
@@ -1501,6 +1685,67 @@ async def listen(ctx: commands.Context, mode: str = "on") -> None:
     session_state.voice_poll_task = asyncio.create_task(_live_voice_poll_loop(ctx.guild.id))
 
     await ctx.send("Live listening enabled. Speak in voice and I will reply.")
+
+
+@bot.command()
+async def mode(ctx: commands.Context, *, arg: str = "") -> None:
+    """Set or view your conversation mode. Usage: `!mode funny` or `!mode` to view."""
+    session_state = sessions.get(ctx.guild.id)
+    if session_state is None:
+        session_state = GuildSession(text_channel_id=ctx.channel.id)
+        loaded = _load_chat_memory().get(ctx.guild.id)
+        if loaded:
+            if isinstance(loaded, dict):
+                session_state.chat_history = loaded.get("chat_history", [])
+                session_state.user_chat_history = loaded.get("user_chat_history", {})
+                session_state.user_modes = loaded.get("user_modes", {})
+            elif isinstance(loaded, list):
+                session_state.chat_history = loaded
+        sessions[ctx.guild.id] = session_state
+
+    arg = (arg or "").strip().lower()
+    valid = {"normal", "funny", "savage", "info"}
+    if not arg:
+        current = session_state.user_modes.get(ctx.author.id, "normal")
+        await ctx.send(f"Your current chat mode is: {current}. Available: {', '.join(sorted(valid))}")
+        return
+
+    # Allow mention to set for another user: e.g. !mode funny @user
+    target_id = ctx.author.id
+    if ctx.message.mentions:
+        target = ctx.message.mentions[0]
+        target_id = target.id
+
+    if arg not in valid:
+        await ctx.send(f"Unknown mode '{arg}'. Valid: {', '.join(sorted(valid))}")
+        return
+
+    session_state.user_modes[target_id] = arg
+    _save_chat_memory()
+    if target_id == ctx.author.id:
+        await ctx.send(f"Set your chat mode to: {arg}")
+    else:
+        await ctx.send(f"Set chat mode for <@{target_id}> to: {arg}")
+
+
+@bot.command(name="funny")
+async def _cmd_funny(ctx: commands.Context) -> None:
+    await mode(ctx, arg="funny")
+
+
+@bot.command(name="savage")
+async def _cmd_savage(ctx: commands.Context) -> None:
+    await mode(ctx, arg="savage")
+
+
+@bot.command(name="info")
+async def _cmd_info(ctx: commands.Context) -> None:
+    await mode(ctx, arg="info")
+
+
+@bot.command(name="normal")
+async def _cmd_normal(ctx: commands.Context) -> None:
+    await mode(ctx, arg="normal")
 
 
 @bot.command()
