@@ -119,6 +119,7 @@ WEB_PORT = int(os.getenv("PORT", os.getenv("WEB_PORT", "10000")))
 DISCORD_LOGIN_MAX_RETRIES = int(os.getenv("DISCORD_LOGIN_MAX_RETRIES", "8"))
 DISCORD_LOGIN_RETRY_BASE_SECONDS = float(os.getenv("DISCORD_LOGIN_RETRY_BASE_SECONDS", "5"))
 DISCORD_LOGIN_RETRY_MAX_SECONDS = float(os.getenv("DISCORD_LOGIN_RETRY_MAX_SECONDS", "300"))
+CONVERSATION_TIMEOUT = float(os.getenv("CONVERSATION_TIMEOUT", "120"))
 
 log = logging.getLogger(__name__)
 _http_session: Optional[aiohttp.ClientSession] = None
@@ -147,6 +148,7 @@ class GuildSession:
     voice_poll_task: Optional[asyncio.Task[Any]] = field(default=None)
     live_audio_by_user: dict[int, dict[str, Any]] = field(default_factory=dict)
     live_audio_lock: threading.Lock = field(default_factory=threading.Lock)
+    conversation_users: dict[int, float] = field(default_factory=dict)
 
 
 sessions: dict[int, GuildSession] = {}
@@ -319,6 +321,8 @@ def transcribe_pcm_bytes(pcm_bytes: bytes) -> str:
     if not pcm_bytes:
         return ""
 
+    log.info("PCM data length=%d bytes, duration=%.3fs", len(pcm_bytes), _pcm_bytes_to_seconds(pcm_bytes))
+
     # Incoming PCM from discord-ext-voice-recv is 48kHz, s16le, stereo.
     audio = AudioSegment(
         data=pcm_bytes,
@@ -341,14 +345,15 @@ def transcribe_pcm_bytes(pcm_bytes: bytes) -> str:
     try:
         model = get_asr_model()
         language = None if LIVE_TRANSCRIBE_LANGUAGE in {"", "auto"} else LIVE_TRANSCRIBE_LANGUAGE
-        segments, _info = model.transcribe(
+        segments, info = model.transcribe(
             str(wav_path),
             language=language,
-            beam_size=1,
+            beam_size=5,
             vad_filter=False,
             condition_on_previous_text=False,
         )
         text = " ".join(segment.text.strip() for segment in segments if segment.text and segment.text.strip())
+        log.info("Whisper result: text=%r duration=%.2fs language=%s probability=%.2f", text, info.duration, info.language, info.language_probability)
         return text.strip()
     finally:
         wav_path.unlink(missing_ok=True)
@@ -848,12 +853,15 @@ def _push_live_audio_frame(session_state: GuildSession, user: Optional[discord.a
     if bot.user and user.id == bot.user.id:
         return
 
+    # Skip frames while bot is playing audio to avoid echo feedback
+    if any(vc.is_playing() for vc in bot.voice_clients):
+        return
+
     try:
         rms = _calculate_rms(pcm, 2)
     except Exception:
         rms = 0
 
-    # Ignore near-silence frames so pause detection can flush and trigger a response.
     if rms < MIN_RMS_FOR_TRANSCRIPTION:
         return
 
@@ -1225,6 +1233,26 @@ def extract_prompt(message: discord.Message) -> Optional[str]:
     return cleaned
 
 
+async def handle_greeting(message: discord.Message) -> None:
+    greeting = "What can I help?"
+    if not message.guild:
+        await message.reply(greeting)
+        return
+
+    session_state = sessions.get(message.guild.id)
+    vc = message.guild.voice_client
+
+    if session_state and vc and vc.is_connected() and message.author.voice and message.author.voice.channel == vc.channel:
+        await message.reply(greeting)
+        try:
+            language_code = detect_prompt_language(greeting, session_state=session_state, author_id=message.author.id)
+            await speak_text(vc, session_state, greeting, language_code)
+        except Exception as exc:
+            log.exception("Greeting voice playback failed")
+    else:
+        await message.reply(f"{greeting} Use !join to talk in voice.")
+
+
 async def handle_prompt(message: discord.Message, prompt: str) -> None:
     if not message.guild:
         return
@@ -1422,9 +1450,43 @@ async def on_message(message: discord.Message) -> None:
         )
 
     prompt = extract_prompt(message)
+
     if prompt is not None:
         log.info("Prompt trigger matched author=%s prompt=%r", message.author, prompt)
-        await handle_prompt(message, prompt)
+
+        # Enter conversation mode for follow-up messages without trigger
+        if message.guild:
+            session_state = sessions.get(message.guild.id)
+            if session_state:
+                session_state.conversation_users[message.author.id] = time.time()
+
+        if prompt:
+            await handle_prompt(message, prompt)
+        else:
+            await handle_greeting(message)
+        return
+
+    # Conversation mode: auto-process follow-up messages without trigger
+    if message.guild and not message.content.strip().startswith("!"):
+        session_state = sessions.get(message.guild.id)
+        vc = message.guild.voice_client
+        if session_state and message.author.id in session_state.conversation_users:
+            now = time.time()
+            # Clear expired or disconnected users
+            if not vc or not vc.is_connected():
+                session_state.conversation_users.clear()
+            else:
+                expired = [uid for uid, last in session_state.conversation_users.items() if now - last > CONVERSATION_TIMEOUT]
+                for uid in expired:
+                    del session_state.conversation_users[uid]
+
+            if message.author.id in session_state.conversation_users:
+                session_state.conversation_users[message.author.id] = now
+                content = message.content.strip()
+                if content:
+                    log.info("Conversation mode processing author=%s content=%r", message.author, content)
+                    await handle_prompt(message, content)
+                return
 
     await bot.process_commands(message)
 
@@ -1761,6 +1823,7 @@ async def leave(ctx: commands.Context) -> None:
 
     session_state = sessions.get(ctx.guild.id)
     if session_state:
+        session_state.conversation_users.clear()
         _stop_listening_state(session_state, vc)
 
     await vc.disconnect()
